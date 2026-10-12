@@ -1,14 +1,14 @@
 {
   "company_id": "coveragex",
   "display_name": "Coverage X",
-  "refreshed_at": "2026-10-09T17:28:38Z",
+  "refreshed_at": "2026-10-12T20:20:49Z",
   "observation_count": 16,
   "observations": [
     {
       "name": "Rate_10Y_UST",
-      "value": 5.28,
+      "value": 5.22,
       "unit": "%",
-      "as_of": "2026-10-07",
+      "as_of": "2026-10-08",
       "source": "FRED",
       "series_id": "DGS10",
       "url": "https://fred.stlouisfed.org/series/DGS10"
@@ -17,16 +17,16 @@
       "name": "FedFunds_Upper",
       "value": 4.0,
       "unit": "%",
-      "as_of": "2026-10-09",
+      "as_of": "2026-10-12",
       "source": "FRED",
       "series_id": "DFEDTARU",
       "url": "https://fred.stlouisfed.org/series/DFEDTARU"
     },
     {
       "name": "Spread_10Y2Y",
-      "value": 0.47,
+      "value": 0.44,
       "unit": "%",
-      "as_of": "2026-10-08",
+      "as_of": "2026-10-09",
       "source": "FRED",
       "series_id": "T10Y2Y",
       "url": "https://fred.stlouisfed.org/series/T10Y2Y"
@@ -105,45 +105,45 @@
     },
     {
       "name": "AIZ_Price",
-      "value": 267.7550048828125,
+      "value": 268.6300048828125,
       "unit": "USD",
-      "as_of": "2026-10-09",
+      "as_of": "2026-10-12",
       "source": "Yahoo Finance",
       "series_id": "AIZ",
       "url": "https://finance.yahoo.com/quote/AIZ"
     },
     {
       "name": "ALLY_Price",
-      "value": 37.46500015258789,
+      "value": 37.90999984741211,
       "unit": "USD",
-      "as_of": "2026-10-09",
+      "as_of": "2026-10-12",
       "source": "Yahoo Finance",
       "series_id": "ALLY",
       "url": "https://finance.yahoo.com/quote/ALLY"
     },
     {
       "name": "KMX_Price",
-      "value": 52.720001220703125,
+      "value": 50.689998626708984,
       "unit": "USD",
-      "as_of": "2026-10-09",
+      "as_of": "2026-10-12",
       "source": "Yahoo Finance",
       "series_id": "KMX",
       "url": "https://finance.yahoo.com/quote/KMX"
     },
     {
       "name": "CACC_Price",
-      "value": 538.4199829101562,
+      "value": 548.1199951171875,
       "unit": "USD",
-      "as_of": "2026-10-09",
+      "as_of": "2026-10-12",
       "source": "Yahoo Finance",
       "series_id": "CACC",
       "url": "https://finance.yahoo.com/quote/CACC"
     },
     {
       "name": "COF_Price",
-      "value": 199.61000061035156,
+      "value": 201.13999938964844,
       "unit": "USD",
-      "as_of": "2026-10-09",
+      "as_of": "2026-10-12",
       "source": "Yahoo Finance",
       "series_id": "COF",
       "url": "https://finance.yahoo.com/quote/COF"

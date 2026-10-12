@@ -1,10 +1,10 @@
 # Coverage X live data
-# Refreshed: 2026-10-09T17:28:38Z
+# Refreshed: 2026-10-12T20:20:49Z
 # Observations: 16
 name,value,unit,source,series_id,as_of,url
-Rate_10Y_UST,5.28,%,FRED,DGS10,2026-10-07,https://fred.stlouisfed.org/series/DGS10
-FedFunds_Upper,4.0,%,FRED,DFEDTARU,2026-10-09,https://fred.stlouisfed.org/series/DFEDTARU
-Spread_10Y2Y,0.47,%,FRED,T10Y2Y,2026-10-08,https://fred.stlouisfed.org/series/T10Y2Y
+Rate_10Y_UST,5.22,%,FRED,DGS10,2026-10-08,https://fred.stlouisfed.org/series/DGS10
+FedFunds_Upper,4.0,%,FRED,DFEDTARU,2026-10-12,https://fred.stlouisfed.org/series/DFEDTARU
+Spread_10Y2Y,0.44,%,FRED,T10Y2Y,2026-10-09,https://fred.stlouisfed.org/series/T10Y2Y
 AutoSales_SAAR,16.378,millions,FRED,TOTALSA,2026-09-01,https://fred.stlouisfed.org/series/TOTALSA
 CPI_UsedCarsTrucks,184.58,index,FRED,CUUR0000SETA02,2026-08-01,https://fred.stlouisfed.org/series/CUUR0000SETA02
 UMich_Sentiment,51.7,index,FRED,UMCSENT,2026-08-01,https://fred.stlouisfed.org/series/UMCSENT
@@ -13,8 +13,8 @@ Mort_30Y,7.4,%,FRED,MORTGAGE30US,2026-10-08,https://fred.stlouisfed.org/series/M
 Vehicle_Miles,294124.0,index,FRED,TRFVOLUSM227NFWA,2026-08-01,https://fred.stlouisfed.org/series/TRFVOLUSM227NFWA
 LightTruck_Inv,187.097,thsds,FRED,AUINSA,2026-08-01,https://fred.stlouisfed.org/series/AUINSA
 AutoLoanRate_48mo,7.47,%,FRED,TERMCBAUTO48NS,2026-08-01,https://fred.stlouisfed.org/series/TERMCBAUTO48NS
-AIZ_Price,267.7550048828125,USD,Yahoo Finance,AIZ,2026-10-09,https://finance.yahoo.com/quote/AIZ
-ALLY_Price,37.46500015258789,USD,Yahoo Finance,ALLY,2026-10-09,https://finance.yahoo.com/quote/ALLY
-KMX_Price,52.720001220703125,USD,Yahoo Finance,KMX,2026-10-09,https://finance.yahoo.com/quote/KMX
-CACC_Price,538.4199829101562,USD,Yahoo Finance,CACC,2026-10-09,https://finance.yahoo.com/quote/CACC
-COF_Price,199.61000061035156,USD,Yahoo Finance,COF,2026-10-09,https://finance.yahoo.com/quote/COF
+AIZ_Price,268.6300048828125,USD,Yahoo Finance,AIZ,2026-10-12,https://finance.yahoo.com/quote/AIZ
+ALLY_Price,37.90999984741211,USD,Yahoo Finance,ALLY,2026-10-12,https://finance.yahoo.com/quote/ALLY
+KMX_Price,50.689998626708984,USD,Yahoo Finance,KMX,2026-10-12,https://finance.yahoo.com/quote/KMX
+CACC_Price,548.1199951171875,USD,Yahoo Finance,CACC,2026-10-12,https://finance.yahoo.com/quote/CACC
+COF_Price,201.13999938964844,USD,Yahoo Finance,COF,2026-10-12,https://finance.yahoo.com/quote/COF
