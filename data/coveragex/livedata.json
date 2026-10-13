@@ -1,7 +1,7 @@
 {
   "company_id": "coveragex",
   "display_name": "Coverage X",
-  "refreshed_at": "2026-10-12T20:20:49Z",
+  "refreshed_at": "2026-10-13T18:23:24Z",
   "observation_count": 16,
   "observations": [
     {
@@ -17,7 +17,7 @@
       "name": "FedFunds_Upper",
       "value": 4.0,
       "unit": "%",
-      "as_of": "2026-10-12",
+      "as_of": "2026-10-13",
       "source": "FRED",
       "series_id": "DFEDTARU",
       "url": "https://fred.stlouisfed.org/series/DFEDTARU"
@@ -105,45 +105,45 @@
     },
     {
       "name": "AIZ_Price",
-      "value": 268.6300048828125,
+      "value": 270.4700012207031,
       "unit": "USD",
-      "as_of": "2026-10-12",
+      "as_of": "2026-10-13",
       "source": "Yahoo Finance",
       "series_id": "AIZ",
       "url": "https://finance.yahoo.com/quote/AIZ"
     },
     {
       "name": "ALLY_Price",
-      "value": 37.90999984741211,
+      "value": 37.54499816894531,
       "unit": "USD",
-      "as_of": "2026-10-12",
+      "as_of": "2026-10-13",
       "source": "Yahoo Finance",
       "series_id": "ALLY",
       "url": "https://finance.yahoo.com/quote/ALLY"
     },
     {
       "name": "KMX_Price",
-      "value": 50.689998626708984,
+      "value": 50.46500015258789,
       "unit": "USD",
-      "as_of": "2026-10-12",
+      "as_of": "2026-10-13",
       "source": "Yahoo Finance",
       "series_id": "KMX",
       "url": "https://finance.yahoo.com/quote/KMX"
     },
     {
       "name": "CACC_Price",
-      "value": 548.1199951171875,
+      "value": 543.9199829101562,
       "unit": "USD",
-      "as_of": "2026-10-12",
+      "as_of": "2026-10-13",
       "source": "Yahoo Finance",
       "series_id": "CACC",
       "url": "https://finance.yahoo.com/quote/CACC"
     },
     {
       "name": "COF_Price",
-      "value": 201.13999938964844,
+      "value": 196.57000732421875,
       "unit": "USD",
-      "as_of": "2026-10-12",
+      "as_of": "2026-10-13",
       "source": "Yahoo Finance",
       "series_id": "COF",
       "url": "https://finance.yahoo.com/quote/COF"
