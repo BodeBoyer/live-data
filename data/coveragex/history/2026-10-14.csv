@@ -1,0 +1,20 @@
+# Coverage X live data
+# Refreshed: 2026-10-14T15:52:02Z
+# Observations: 16
+name,value,unit,source,series_id,as_of,url
+Rate_10Y_UST,5.24,%,FRED,DGS10,2026-10-09,https://fred.stlouisfed.org/series/DGS10
+FedFunds_Upper,4.0,%,FRED,DFEDTARU,2026-10-14,https://fred.stlouisfed.org/series/DFEDTARU
+Spread_10Y2Y,0.42,%,FRED,T10Y2Y,2026-10-13,https://fred.stlouisfed.org/series/T10Y2Y
+AutoSales_SAAR,16.378,millions,FRED,TOTALSA,2026-09-01,https://fred.stlouisfed.org/series/TOTALSA
+CPI_UsedCarsTrucks,184.395,index,FRED,CUUR0000SETA02,2026-09-01,https://fred.stlouisfed.org/series/CUUR0000SETA02
+UMich_Sentiment,51.7,index,FRED,UMCSENT,2026-08-01,https://fred.stlouisfed.org/series/UMCSENT
+Unemp_Rate,4.2,%,FRED,UNRATE,2026-09-01,https://fred.stlouisfed.org/series/UNRATE
+Mort_30Y,7.4,%,FRED,MORTGAGE30US,2026-10-08,https://fred.stlouisfed.org/series/MORTGAGE30US
+Vehicle_Miles,294124.0,index,FRED,TRFVOLUSM227NFWA,2026-08-01,https://fred.stlouisfed.org/series/TRFVOLUSM227NFWA
+LightTruck_Inv,187.097,thsds,FRED,AUINSA,2026-08-01,https://fred.stlouisfed.org/series/AUINSA
+AutoLoanRate_48mo,7.47,%,FRED,TERMCBAUTO48NS,2026-08-01,https://fred.stlouisfed.org/series/TERMCBAUTO48NS
+AIZ_Price,272.3500061035156,USD,Yahoo Finance,AIZ,2026-10-14,https://finance.yahoo.com/quote/AIZ
+ALLY_Price,36.729698181152344,USD,Yahoo Finance,ALLY,2026-10-14,https://finance.yahoo.com/quote/ALLY
+KMX_Price,49.349998474121094,USD,Yahoo Finance,KMX,2026-10-14,https://finance.yahoo.com/quote/KMX
+CACC_Price,533.2249755859375,USD,Yahoo Finance,CACC,2026-10-14,https://finance.yahoo.com/quote/CACC
+COF_Price,195.25999450683594,USD,Yahoo Finance,COF,2026-10-14,https://finance.yahoo.com/quote/COF
