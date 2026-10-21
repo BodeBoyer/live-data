@@ -1,0 +1,31 @@
+# AmWest Funding Corporation live data
+# Refreshed: 2026-10-21T15:59:47Z
+# Observations: 27
+name,value,unit,source,series_id,as_of,url
+Rate_10Y_UST,400.0,%,FRED,DGS10,"    <link href=""https://fonts.googleapis.com/css?family=Open+Sans:300",https://fred.stlouisfed.org/series/DGS10
+Rate_2Y_UST,400.0,%,FRED,DGS2,"    <link href=""https://fonts.googleapis.com/css?family=Open+Sans:300",https://fred.stlouisfed.org/series/DGS2
+Rate_SOFR_ON,400.0,%,FRED,SOFR,"    <link href=""https://fonts.googleapis.com/css?family=Open+Sans:300",https://fred.stlouisfed.org/series/SOFR
+Rate_SOFR_30D,400.0,%,FRED,SOFR30DAYAVG,"    <link href=""https://fonts.googleapis.com/css?family=Open+Sans:300",https://fred.stlouisfed.org/series/SOFR30DAYAVG
+Rate_FedFunds,400.0,%,FRED,DFF,"    <link href=""https://fonts.googleapis.com/css?family=Open+Sans:300",https://fred.stlouisfed.org/series/DFF
+Mort_30Y,400.0,%,FRED,MORTGAGE30US,"    <link href=""https://fonts.googleapis.com/css?family=Open+Sans:300",https://fred.stlouisfed.org/series/MORTGAGE30US
+Mort_15Y,400.0,%,FRED,MORTGAGE15US,"    <link href=""https://fonts.googleapis.com/css?family=Open+Sans:300",https://fred.stlouisfed.org/series/MORTGAGE15US
+HouseStarts,400.0,thsds,FRED,HOUST,"    <link href=""https://fonts.googleapis.com/css?family=Open+Sans:300",https://fred.stlouisfed.org/series/HOUST
+ExHomeSales,400.0,mil,FRED,EXHOSLUSM495S,"    <link href=""https://fonts.googleapis.com/css?family=Open+Sans:300",https://fred.stlouisfed.org/series/EXHOSLUSM495S
+NewHomeSales,400.0,thsds,FRED,HSN1F,"    <link href=""https://fonts.googleapis.com/css?family=Open+Sans:300",https://fred.stlouisfed.org/series/HSN1F
+CaseShiller,400.0,index,FRED,SPCS20RSA,"    <link href=""https://fonts.googleapis.com/css?family=Open+Sans:300",https://fred.stlouisfed.org/series/SPCS20RSA
+CPI_Headline,400.0,index,FRED,CPIAUCSL,"    <link href=""https://fonts.googleapis.com/css?family=Open+Sans:300",https://fred.stlouisfed.org/series/CPIAUCSL
+Unemp_Rate,400.0,%,FRED,UNRATE,"    <link href=""https://fonts.googleapis.com/css?family=Open+Sans:300",https://fred.stlouisfed.org/series/UNRATE
+RKT_Price,11.359999656677246,USD,Yahoo Finance,RKT,2026-10-21,https://finance.yahoo.com/quote/RKT
+UWMC_Price,1.1200000047683716,USD,Yahoo Finance,UWMC,2026-10-21,https://finance.yahoo.com/quote/UWMC
+PFSI_Price,60.18000030517578,USD,Yahoo Finance,PFSI,2026-10-21,https://finance.yahoo.com/quote/PFSI
+LDI_Price,0.5401999950408936,USD,Yahoo Finance,LDI,2026-10-21,https://finance.yahoo.com/quote/LDI
+VEL_Price,14.930000305175781,USD,Yahoo Finance,VEL,2026-10-21,https://finance.yahoo.com/quote/VEL
+MBB_Price,90.63999938964844,USD,Yahoo Finance,MBB,2026-10-21,https://finance.yahoo.com/quote/MBB
+VMBS_Price,44.94990158081055,USD,Yahoo Finance,VMBS,2026-10-21,https://finance.yahoo.com/quote/VMBS
+RKT_StkEq,-12.034,USDm,SEC EDGAR,RKT_SE,2026-06-30,https://data.sec.gov/submissions/CIK0001805526.json
+RKT_Shares,30.99779,m,SEC EDGAR,RKT_SHRS,2026-08-13,https://data.sec.gov/submissions/CIK0001805526.json
+UWMC_StkEq,985.308,USDm,SEC EDGAR,UWMC_SE,2026-06-30,https://data.sec.gov/submissions/CIK0001783398.json
+UWMC_Shares,103.104205,m,SEC EDGAR,UWMC_SHRS,2021-03-18,https://data.sec.gov/submissions/CIK0001783398.json
+PFSI_StkEq,4336.886,USDm,SEC EDGAR,PFSI_SE,2026-06-30,https://data.sec.gov/submissions/CIK0001745916.json
+PFSI_Shares,51.951572,m,SEC EDGAR,PFSI_SHRS,2026-07-31,https://data.sec.gov/submissions/CIK0001745916.json
+LDI_StkEq,333.046,USDm,SEC EDGAR,LDI_SE,2026-06-30,https://data.sec.gov/submissions/CIK0001831631.json
