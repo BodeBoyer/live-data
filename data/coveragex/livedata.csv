@@ -1,20 +1,20 @@
 # Coverage X live data
-# Refreshed: 2026-10-21T15:59:47Z
+# Refreshed: 2026-10-22T15:55:31Z
 # Observations: 16
 name,value,unit,source,series_id,as_of,url
-Rate_10Y_UST,400.0,%,FRED,DGS10,"    <link href=""https://fonts.googleapis.com/css?family=Open+Sans:300",https://fred.stlouisfed.org/series/DGS10
-FedFunds_Upper,400.0,%,FRED,DFEDTARU,"    <link href=""https://fonts.googleapis.com/css?family=Open+Sans:300",https://fred.stlouisfed.org/series/DFEDTARU
-Spread_10Y2Y,400.0,%,FRED,T10Y2Y,"    <link href=""https://fonts.googleapis.com/css?family=Open+Sans:300",https://fred.stlouisfed.org/series/T10Y2Y
-AutoSales_SAAR,400.0,millions,FRED,TOTALSA,"    <link href=""https://fonts.googleapis.com/css?family=Open+Sans:300",https://fred.stlouisfed.org/series/TOTALSA
-CPI_UsedCarsTrucks,400.0,index,FRED,CUUR0000SETA02,"    <link href=""https://fonts.googleapis.com/css?family=Open+Sans:300",https://fred.stlouisfed.org/series/CUUR0000SETA02
-UMich_Sentiment,400.0,index,FRED,UMCSENT,"    <link href=""https://fonts.googleapis.com/css?family=Open+Sans:300",https://fred.stlouisfed.org/series/UMCSENT
-Unemp_Rate,400.0,%,FRED,UNRATE,"    <link href=""https://fonts.googleapis.com/css?family=Open+Sans:300",https://fred.stlouisfed.org/series/UNRATE
-Mort_30Y,400.0,%,FRED,MORTGAGE30US,"    <link href=""https://fonts.googleapis.com/css?family=Open+Sans:300",https://fred.stlouisfed.org/series/MORTGAGE30US
-Vehicle_Miles,400.0,index,FRED,TRFVOLUSM227NFWA,"    <link href=""https://fonts.googleapis.com/css?family=Open+Sans:300",https://fred.stlouisfed.org/series/TRFVOLUSM227NFWA
-LightTruck_Inv,400.0,thsds,FRED,AUINSA,"    <link href=""https://fonts.googleapis.com/css?family=Open+Sans:300",https://fred.stlouisfed.org/series/AUINSA
-AutoLoanRate_48mo,400.0,%,FRED,TERMCBAUTO48NS,"    <link href=""https://fonts.googleapis.com/css?family=Open+Sans:300",https://fred.stlouisfed.org/series/TERMCBAUTO48NS
-AIZ_Price,284.81500244140625,USD,Yahoo Finance,AIZ,2026-10-21,https://finance.yahoo.com/quote/AIZ
-ALLY_Price,38.61920166015625,USD,Yahoo Finance,ALLY,2026-10-21,https://finance.yahoo.com/quote/ALLY
-KMX_Price,53.25,USD,Yahoo Finance,KMX,2026-10-21,https://finance.yahoo.com/quote/KMX
-CACC_Price,539.3424072265625,USD,Yahoo Finance,CACC,2026-10-21,https://finance.yahoo.com/quote/CACC
-COF_Price,210.1300048828125,USD,Yahoo Finance,COF,2026-10-21,https://finance.yahoo.com/quote/COF
+Rate_10Y_UST,5.12,%,FRED,DGS10,2026-10-20,https://fred.stlouisfed.org/series/DGS10
+FedFunds_Upper,4.0,%,FRED,DFEDTARU,2026-10-22,https://fred.stlouisfed.org/series/DFEDTARU
+Spread_10Y2Y,0.32,%,FRED,T10Y2Y,2026-10-21,https://fred.stlouisfed.org/series/T10Y2Y
+AutoSales_SAAR,16.378,millions,FRED,TOTALSA,2026-09-01,https://fred.stlouisfed.org/series/TOTALSA
+CPI_UsedCarsTrucks,184.395,index,FRED,CUUR0000SETA02,2026-09-01,https://fred.stlouisfed.org/series/CUUR0000SETA02
+UMich_Sentiment,51.7,index,FRED,UMCSENT,2026-08-01,https://fred.stlouisfed.org/series/UMCSENT
+Unemp_Rate,4.2,%,FRED,UNRATE,2026-09-01,https://fred.stlouisfed.org/series/UNRATE
+Mort_30Y,7.4,%,FRED,MORTGAGE30US,2026-10-15,https://fred.stlouisfed.org/series/MORTGAGE30US
+Vehicle_Miles,294124.0,index,FRED,TRFVOLUSM227NFWA,2026-08-01,https://fred.stlouisfed.org/series/TRFVOLUSM227NFWA
+LightTruck_Inv,187.097,thsds,FRED,AUINSA,2026-08-01,https://fred.stlouisfed.org/series/AUINSA
+AutoLoanRate_48mo,7.47,%,FRED,TERMCBAUTO48NS,2026-08-01,https://fred.stlouisfed.org/series/TERMCBAUTO48NS
+AIZ_Price,287.125,USD,Yahoo Finance,AIZ,2026-10-22,https://finance.yahoo.com/quote/AIZ
+ALLY_Price,38.752498626708984,USD,Yahoo Finance,ALLY,2026-10-22,https://finance.yahoo.com/quote/ALLY
+KMX_Price,51.87099838256836,USD,Yahoo Finance,KMX,2026-10-22,https://finance.yahoo.com/quote/KMX
+CACC_Price,548.7852172851562,USD,Yahoo Finance,CACC,2026-10-22,https://finance.yahoo.com/quote/CACC
+COF_Price,204.58999633789062,USD,Yahoo Finance,COF,2026-10-22,https://finance.yahoo.com/quote/COF
