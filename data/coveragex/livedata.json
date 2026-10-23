@@ -1,14 +1,14 @@
 {
   "company_id": "coveragex",
   "display_name": "Coverage X",
-  "refreshed_at": "2026-10-22T15:55:31Z",
+  "refreshed_at": "2026-10-23T15:47:32Z",
   "observation_count": 16,
   "observations": [
     {
       "name": "Rate_10Y_UST",
-      "value": 5.12,
+      "value": 5.13,
       "unit": "%",
-      "as_of": "2026-10-20",
+      "as_of": "2026-10-21",
       "source": "FRED",
       "series_id": "DGS10",
       "url": "https://fred.stlouisfed.org/series/DGS10"
@@ -17,16 +17,16 @@
       "name": "FedFunds_Upper",
       "value": 4.0,
       "unit": "%",
-      "as_of": "2026-10-22",
+      "as_of": "2026-10-23",
       "source": "FRED",
       "series_id": "DFEDTARU",
       "url": "https://fred.stlouisfed.org/series/DFEDTARU"
     },
     {
       "name": "Spread_10Y2Y",
-      "value": 0.32,
+      "value": 0.31,
       "unit": "%",
-      "as_of": "2026-10-21",
+      "as_of": "2026-10-22",
       "source": "FRED",
       "series_id": "T10Y2Y",
       "url": "https://fred.stlouisfed.org/series/T10Y2Y"
@@ -51,9 +51,9 @@
     },
     {
       "name": "UMich_Sentiment",
-      "value": 51.7,
+      "value": 48.1,
       "unit": "index",
-      "as_of": "2026-08-01",
+      "as_of": "2026-09-01",
       "source": "FRED",
       "series_id": "UMCSENT",
       "url": "https://fred.stlouisfed.org/series/UMCSENT"
@@ -69,9 +69,9 @@
     },
     {
       "name": "Mort_30Y",
-      "value": 7.4,
+      "value": 7.32,
       "unit": "%",
-      "as_of": "2026-10-15",
+      "as_of": "2026-10-22",
       "source": "FRED",
       "series_id": "MORTGAGE30US",
       "url": "https://fred.stlouisfed.org/series/MORTGAGE30US"
@@ -105,45 +105,45 @@
     },
     {
       "name": "AIZ_Price",
-      "value": 287.125,
+      "value": 285.177490234375,
       "unit": "USD",
-      "as_of": "2026-10-22",
+      "as_of": "2026-10-23",
       "source": "Yahoo Finance",
       "series_id": "AIZ",
       "url": "https://finance.yahoo.com/quote/AIZ"
     },
     {
       "name": "ALLY_Price",
-      "value": 38.752498626708984,
+      "value": 39.02000045776367,
       "unit": "USD",
-      "as_of": "2026-10-22",
+      "as_of": "2026-10-23",
       "source": "Yahoo Finance",
       "series_id": "ALLY",
       "url": "https://finance.yahoo.com/quote/ALLY"
     },
     {
       "name": "KMX_Price",
-      "value": 51.87099838256836,
+      "value": 50.92499923706055,
       "unit": "USD",
-      "as_of": "2026-10-22",
+      "as_of": "2026-10-23",
       "source": "Yahoo Finance",
       "series_id": "KMX",
       "url": "https://finance.yahoo.com/quote/KMX"
     },
     {
       "name": "CACC_Price",
-      "value": 548.7852172851562,
+      "value": 546.655029296875,
       "unit": "USD",
-      "as_of": "2026-10-22",
+      "as_of": "2026-10-23",
       "source": "Yahoo Finance",
       "series_id": "CACC",
       "url": "https://finance.yahoo.com/quote/CACC"
     },
     {
       "name": "COF_Price",
-      "value": 204.58999633789062,
+      "value": 201.0399932861328,
       "unit": "USD",
-      "as_of": "2026-10-22",
+      "as_of": "2026-10-23",
       "source": "Yahoo Finance",
       "series_id": "COF",
       "url": "https://finance.yahoo.com/quote/COF"
