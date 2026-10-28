@@ -1,41 +1,41 @@
 {
   "company_id": "amwest",
   "display_name": "AmWest Funding Corporation",
-  "refreshed_at": "2026-10-27T16:44:18Z",
+  "refreshed_at": "2026-10-28T17:12:44Z",
   "observation_count": 27,
   "observations": [
     {
       "name": "Rate_10Y_UST",
       "value": 5.0,
       "unit": "%",
-      "as_of": "2026-10-23",
+      "as_of": "2026-10-26",
       "source": "FRED",
       "series_id": "DGS10",
       "url": "https://fred.stlouisfed.org/series/DGS10"
     },
     {
       "name": "Rate_2Y_UST",
-      "value": 4.69,
+      "value": 4.68,
       "unit": "%",
-      "as_of": "2026-10-23",
+      "as_of": "2026-10-26",
       "source": "FRED",
       "series_id": "DGS2",
       "url": "https://fred.stlouisfed.org/series/DGS2"
     },
     {
       "name": "Rate_SOFR_ON",
-      "value": 3.93,
+      "value": 3.95,
       "unit": "%",
-      "as_of": "2026-10-26",
+      "as_of": "2026-10-27",
       "source": "FRED",
       "series_id": "SOFR",
       "url": "https://fred.stlouisfed.org/series/SOFR"
     },
     {
       "name": "Rate_SOFR_30D",
-      "value": 3.89355,
+      "value": 3.89522,
       "unit": "%",
-      "as_of": "2026-10-27",
+      "as_of": "2026-10-28",
       "source": "FRED",
       "series_id": "SOFR30DAYAVG",
       "url": "https://fred.stlouisfed.org/series/SOFR30DAYAVG"
@@ -44,7 +44,7 @@
       "name": "Rate_FedFunds",
       "value": 3.88,
       "unit": "%",
-      "as_of": "2026-10-23",
+      "as_of": "2026-10-26",
       "source": "FRED",
       "series_id": "DFF",
       "url": "https://fred.stlouisfed.org/series/DFF"
@@ -96,9 +96,9 @@
     },
     {
       "name": "CaseShiller",
-      "value": 345.5769319598,
+      "value": 346.5927056292,
       "unit": "index",
-      "as_of": "2026-07-01",
+      "as_of": "2026-08-01",
       "source": "FRED",
       "series_id": "SPCS20RSA",
       "url": "https://fred.stlouisfed.org/series/SPCS20RSA"
@@ -123,63 +123,63 @@
     },
     {
       "name": "RKT_Price",
-      "value": 11.795000076293945,
+      "value": 11.640000343322754,
       "unit": "USD",
-      "as_of": "2026-10-27",
+      "as_of": "2026-10-28",
       "source": "Yahoo Finance",
       "series_id": "RKT",
       "url": "https://finance.yahoo.com/quote/RKT"
     },
     {
       "name": "UWMC_Price",
-      "value": 1.5197999477386475,
+      "value": 1.5399999618530273,
       "unit": "USD",
-      "as_of": "2026-10-27",
+      "as_of": "2026-10-28",
       "source": "Yahoo Finance",
       "series_id": "UWMC",
       "url": "https://finance.yahoo.com/quote/UWMC"
     },
     {
       "name": "PFSI_Price",
-      "value": 63.59000015258789,
+      "value": 63.41999816894531,
       "unit": "USD",
-      "as_of": "2026-10-27",
+      "as_of": "2026-10-28",
       "source": "Yahoo Finance",
       "series_id": "PFSI",
       "url": "https://finance.yahoo.com/quote/PFSI"
     },
     {
       "name": "LDI_Price",
-      "value": 0.6345999836921692,
+      "value": 0.6169999837875366,
       "unit": "USD",
-      "as_of": "2026-10-27",
+      "as_of": "2026-10-28",
       "source": "Yahoo Finance",
       "series_id": "LDI",
       "url": "https://finance.yahoo.com/quote/LDI"
     },
     {
       "name": "VEL_Price",
-      "value": 15.369999885559082,
+      "value": 15.479999542236328,
       "unit": "USD",
-      "as_of": "2026-10-27",
+      "as_of": "2026-10-28",
       "source": "Yahoo Finance",
       "series_id": "VEL",
       "url": "https://finance.yahoo.com/quote/VEL"
     },
     {
       "name": "MBB_Price",
-      "value": 91.47989654541016,
+      "value": 91.38500213623047,
       "unit": "USD",
-      "as_of": "2026-10-27",
+      "as_of": "2026-10-28",
       "source": "Yahoo Finance",
       "series_id": "MBB",
       "url": "https://finance.yahoo.com/quote/MBB"
     },
     {
       "name": "VMBS_Price",
-      "value": 45.309898376464844,
+      "value": 45.26499938964844,
       "unit": "USD",
-      "as_of": "2026-10-27",
+      "as_of": "2026-10-28",
       "source": "Yahoo Finance",
       "series_id": "VMBS",
       "url": "https://finance.yahoo.com/quote/VMBS"
