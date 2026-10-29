@@ -1,41 +1,41 @@
 {
   "company_id": "amwest",
   "display_name": "AmWest Funding Corporation",
-  "refreshed_at": "2026-10-28T17:12:44Z",
+  "refreshed_at": "2026-10-29T17:28:08Z",
   "observation_count": 27,
   "observations": [
     {
       "name": "Rate_10Y_UST",
-      "value": 5.0,
+      "value": 4.99,
       "unit": "%",
-      "as_of": "2026-10-26",
+      "as_of": "2026-10-27",
       "source": "FRED",
       "series_id": "DGS10",
       "url": "https://fred.stlouisfed.org/series/DGS10"
     },
     {
       "name": "Rate_2Y_UST",
-      "value": 4.68,
+      "value": 4.7,
       "unit": "%",
-      "as_of": "2026-10-26",
+      "as_of": "2026-10-27",
       "source": "FRED",
       "series_id": "DGS2",
       "url": "https://fred.stlouisfed.org/series/DGS2"
     },
     {
       "name": "Rate_SOFR_ON",
-      "value": 3.95,
+      "value": 3.94,
       "unit": "%",
-      "as_of": "2026-10-27",
+      "as_of": "2026-10-28",
       "source": "FRED",
       "series_id": "SOFR",
       "url": "https://fred.stlouisfed.org/series/SOFR"
     },
     {
       "name": "Rate_SOFR_30D",
-      "value": 3.89522,
+      "value": 3.89656,
       "unit": "%",
-      "as_of": "2026-10-28",
+      "as_of": "2026-10-29",
       "source": "FRED",
       "series_id": "SOFR30DAYAVG",
       "url": "https://fred.stlouisfed.org/series/SOFR30DAYAVG"
@@ -44,25 +44,25 @@
       "name": "Rate_FedFunds",
       "value": 3.88,
       "unit": "%",
-      "as_of": "2026-10-26",
+      "as_of": "2026-10-27",
       "source": "FRED",
       "series_id": "DFF",
       "url": "https://fred.stlouisfed.org/series/DFF"
     },
     {
       "name": "Mort_30Y",
-      "value": 7.32,
+      "value": 7.24,
       "unit": "%",
-      "as_of": "2026-10-22",
+      "as_of": "2026-10-29",
       "source": "FRED",
       "series_id": "MORTGAGE30US",
       "url": "https://fred.stlouisfed.org/series/MORTGAGE30US"
     },
     {
       "name": "Mort_15Y",
-      "value": 6.68,
+      "value": 6.6,
       "unit": "%",
-      "as_of": "2026-10-22",
+      "as_of": "2026-10-29",
       "source": "FRED",
       "series_id": "MORTGAGE15US",
       "url": "https://fred.stlouisfed.org/series/MORTGAGE15US"
@@ -123,63 +123,63 @@
     },
     {
       "name": "RKT_Price",
-      "value": 11.640000343322754,
+      "value": 11.970000267028809,
       "unit": "USD",
-      "as_of": "2026-10-28",
+      "as_of": "2026-10-29",
       "source": "Yahoo Finance",
       "series_id": "RKT",
       "url": "https://finance.yahoo.com/quote/RKT"
     },
     {
       "name": "UWMC_Price",
-      "value": 1.5399999618530273,
+      "value": 1.5800000429153442,
       "unit": "USD",
-      "as_of": "2026-10-28",
+      "as_of": "2026-10-29",
       "source": "Yahoo Finance",
       "series_id": "UWMC",
       "url": "https://finance.yahoo.com/quote/UWMC"
     },
     {
       "name": "PFSI_Price",
-      "value": 63.41999816894531,
+      "value": 64.70999908447266,
       "unit": "USD",
-      "as_of": "2026-10-28",
+      "as_of": "2026-10-29",
       "source": "Yahoo Finance",
       "series_id": "PFSI",
       "url": "https://finance.yahoo.com/quote/PFSI"
     },
     {
       "name": "LDI_Price",
-      "value": 0.6169999837875366,
+      "value": 0.6050000190734863,
       "unit": "USD",
-      "as_of": "2026-10-28",
+      "as_of": "2026-10-29",
       "source": "Yahoo Finance",
       "series_id": "LDI",
       "url": "https://finance.yahoo.com/quote/LDI"
     },
     {
       "name": "VEL_Price",
-      "value": 15.479999542236328,
+      "value": 16.079999923706055,
       "unit": "USD",
-      "as_of": "2026-10-28",
+      "as_of": "2026-10-29",
       "source": "Yahoo Finance",
       "series_id": "VEL",
       "url": "https://finance.yahoo.com/quote/VEL"
     },
     {
       "name": "MBB_Price",
-      "value": 91.38500213623047,
+      "value": 91.54979705810547,
       "unit": "USD",
-      "as_of": "2026-10-28",
+      "as_of": "2026-10-29",
       "source": "Yahoo Finance",
       "series_id": "MBB",
       "url": "https://finance.yahoo.com/quote/MBB"
     },
     {
       "name": "VMBS_Price",
-      "value": 45.26499938964844,
+      "value": 45.375,
       "unit": "USD",
-      "as_of": "2026-10-28",
+      "as_of": "2026-10-29",
       "source": "Yahoo Finance",
       "series_id": "VMBS",
       "url": "https://finance.yahoo.com/quote/VMBS"
