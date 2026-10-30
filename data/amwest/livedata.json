@@ -1,23 +1,23 @@
 {
   "company_id": "amwest",
   "display_name": "AmWest Funding Corporation",
-  "refreshed_at": "2026-10-29T17:28:08Z",
+  "refreshed_at": "2026-10-30T17:03:32Z",
   "observation_count": 27,
   "observations": [
     {
       "name": "Rate_10Y_UST",
-      "value": 4.99,
+      "value": 5.05,
       "unit": "%",
-      "as_of": "2026-10-27",
+      "as_of": "2026-10-28",
       "source": "FRED",
       "series_id": "DGS10",
       "url": "https://fred.stlouisfed.org/series/DGS10"
     },
     {
       "name": "Rate_2Y_UST",
-      "value": 4.7,
+      "value": 4.67,
       "unit": "%",
-      "as_of": "2026-10-27",
+      "as_of": "2026-10-28",
       "source": "FRED",
       "series_id": "DGS2",
       "url": "https://fred.stlouisfed.org/series/DGS2"
@@ -26,16 +26,16 @@
       "name": "Rate_SOFR_ON",
       "value": 3.94,
       "unit": "%",
-      "as_of": "2026-10-28",
+      "as_of": "2026-10-29",
       "source": "FRED",
       "series_id": "SOFR",
       "url": "https://fred.stlouisfed.org/series/SOFR"
     },
     {
       "name": "Rate_SOFR_30D",
-      "value": 3.89656,
+      "value": 3.89857,
       "unit": "%",
-      "as_of": "2026-10-29",
+      "as_of": "2026-10-30",
       "source": "FRED",
       "series_id": "SOFR30DAYAVG",
       "url": "https://fred.stlouisfed.org/series/SOFR30DAYAVG"
@@ -44,7 +44,7 @@
       "name": "Rate_FedFunds",
       "value": 3.88,
       "unit": "%",
-      "as_of": "2026-10-27",
+      "as_of": "2026-10-28",
       "source": "FRED",
       "series_id": "DFF",
       "url": "https://fred.stlouisfed.org/series/DFF"
@@ -123,63 +123,63 @@
     },
     {
       "name": "RKT_Price",
-      "value": 11.970000267028809,
+      "value": 12.479999542236328,
       "unit": "USD",
-      "as_of": "2026-10-29",
+      "as_of": "2026-10-30",
       "source": "Yahoo Finance",
       "series_id": "RKT",
       "url": "https://finance.yahoo.com/quote/RKT"
     },
     {
       "name": "UWMC_Price",
-      "value": 1.5800000429153442,
+      "value": 1.4950000047683716,
       "unit": "USD",
-      "as_of": "2026-10-29",
+      "as_of": "2026-10-30",
       "source": "Yahoo Finance",
       "series_id": "UWMC",
       "url": "https://finance.yahoo.com/quote/UWMC"
     },
     {
       "name": "PFSI_Price",
-      "value": 64.70999908447266,
+      "value": 62.095001220703125,
       "unit": "USD",
-      "as_of": "2026-10-29",
+      "as_of": "2026-10-30",
       "source": "Yahoo Finance",
       "series_id": "PFSI",
       "url": "https://finance.yahoo.com/quote/PFSI"
     },
     {
       "name": "LDI_Price",
-      "value": 0.6050000190734863,
+      "value": 0.5672000050544739,
       "unit": "USD",
-      "as_of": "2026-10-29",
+      "as_of": "2026-10-30",
       "source": "Yahoo Finance",
       "series_id": "LDI",
       "url": "https://finance.yahoo.com/quote/LDI"
     },
     {
       "name": "VEL_Price",
-      "value": 16.079999923706055,
+      "value": 15.739999771118164,
       "unit": "USD",
-      "as_of": "2026-10-29",
+      "as_of": "2026-10-30",
       "source": "Yahoo Finance",
       "series_id": "VEL",
       "url": "https://finance.yahoo.com/quote/VEL"
     },
     {
       "name": "MBB_Price",
-      "value": 91.54979705810547,
+      "value": 91.88500213623047,
       "unit": "USD",
-      "as_of": "2026-10-29",
+      "as_of": "2026-10-30",
       "source": "Yahoo Finance",
       "series_id": "MBB",
       "url": "https://finance.yahoo.com/quote/MBB"
     },
     {
       "name": "VMBS_Price",
-      "value": 45.375,
+      "value": 45.4900016784668,
       "unit": "USD",
-      "as_of": "2026-10-29",
+      "as_of": "2026-10-30",
       "source": "Yahoo Finance",
       "series_id": "VMBS",
       "url": "https://finance.yahoo.com/quote/VMBS"
