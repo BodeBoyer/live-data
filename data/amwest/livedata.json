@@ -1,41 +1,41 @@
 {
   "company_id": "amwest",
   "display_name": "AmWest Funding Corporation",
-  "refreshed_at": "2026-11-06T18:07:49Z",
+  "refreshed_at": "2026-11-09T21:30:12Z",
   "observation_count": 27,
   "observations": [
     {
       "name": "Rate_10Y_UST",
-      "value": 4.9,
+      "value": 4.86,
       "unit": "%",
-      "as_of": "2026-11-04",
+      "as_of": "2026-11-06",
       "source": "FRED",
       "series_id": "DGS10",
       "url": "https://fred.stlouisfed.org/series/DGS10"
     },
     {
       "name": "Rate_2Y_UST",
-      "value": 4.58,
+      "value": 4.51,
       "unit": "%",
-      "as_of": "2026-11-04",
+      "as_of": "2026-11-06",
       "source": "FRED",
       "series_id": "DGS2",
       "url": "https://fred.stlouisfed.org/series/DGS2"
     },
     {
       "name": "Rate_SOFR_ON",
-      "value": 3.92,
+      "value": 3.89,
       "unit": "%",
-      "as_of": "2026-11-05",
+      "as_of": "2026-11-06",
       "source": "FRED",
       "series_id": "SOFR",
       "url": "https://fred.stlouisfed.org/series/SOFR"
     },
     {
       "name": "Rate_SOFR_30D",
-      "value": 3.91294,
+      "value": 3.91461,
       "unit": "%",
-      "as_of": "2026-11-06",
+      "as_of": "2026-11-09",
       "source": "FRED",
       "series_id": "SOFR30DAYAVG",
       "url": "https://fred.stlouisfed.org/series/SOFR30DAYAVG"
@@ -44,7 +44,7 @@
       "name": "Rate_FedFunds",
       "value": 3.88,
       "unit": "%",
-      "as_of": "2026-11-04",
+      "as_of": "2026-11-06",
       "source": "FRED",
       "series_id": "DFF",
       "url": "https://fred.stlouisfed.org/series/DFF"
@@ -123,63 +123,63 @@
     },
     {
       "name": "RKT_Price",
-      "value": 14.859999656677246,
+      "value": 15.1899995803833,
       "unit": "USD",
-      "as_of": "2026-11-06",
+      "as_of": "2026-11-09",
       "source": "Yahoo Finance",
       "series_id": "RKT",
       "url": "https://finance.yahoo.com/quote/RKT"
     },
     {
       "name": "UWMC_Price",
-      "value": 1.5149999856948853,
+      "value": 1.4800000190734863,
       "unit": "USD",
-      "as_of": "2026-11-06",
+      "as_of": "2026-11-09",
       "source": "Yahoo Finance",
       "series_id": "UWMC",
       "url": "https://finance.yahoo.com/quote/UWMC"
     },
     {
       "name": "PFSI_Price",
-      "value": 66.01000213623047,
+      "value": 66.44000244140625,
       "unit": "USD",
-      "as_of": "2026-11-06",
+      "as_of": "2026-11-09",
       "source": "Yahoo Finance",
       "series_id": "PFSI",
       "url": "https://finance.yahoo.com/quote/PFSI"
     },
     {
       "name": "LDI_Price",
-      "value": 0.6230999827384949,
+      "value": 0.5306000113487244,
       "unit": "USD",
-      "as_of": "2026-11-06",
+      "as_of": "2026-11-09",
       "source": "Yahoo Finance",
       "series_id": "LDI",
       "url": "https://finance.yahoo.com/quote/LDI"
     },
     {
       "name": "VEL_Price",
-      "value": 17.350000381469727,
+      "value": 17.649999618530273,
       "unit": "USD",
-      "as_of": "2026-11-06",
+      "as_of": "2026-11-09",
       "source": "Yahoo Finance",
       "series_id": "VEL",
       "url": "https://finance.yahoo.com/quote/VEL"
     },
     {
       "name": "MBB_Price",
-      "value": 92.0801010131836,
+      "value": 92.08000183105469,
       "unit": "USD",
-      "as_of": "2026-11-06",
+      "as_of": "2026-11-09",
       "source": "Yahoo Finance",
       "series_id": "MBB",
       "url": "https://finance.yahoo.com/quote/MBB"
     },
     {
       "name": "VMBS_Price",
-      "value": 45.625,
+      "value": 45.630001068115234,
       "unit": "USD",
-      "as_of": "2026-11-06",
+      "as_of": "2026-11-09",
       "source": "Yahoo Finance",
       "series_id": "VMBS",
       "url": "https://finance.yahoo.com/quote/VMBS"
@@ -204,9 +204,9 @@
     },
     {
       "name": "UWMC_StkEq",
-      "value": 985.308,
+      "value": 1318.911,
       "unit": "USDm",
-      "as_of": "2026-06-30",
+      "as_of": "2026-09-30",
       "source": "SEC EDGAR",
       "series_id": "UWMC_SE",
       "url": "https://data.sec.gov/submissions/CIK0001783398.json"
@@ -240,9 +240,9 @@
     },
     {
       "name": "LDI_StkEq",
-      "value": 333.046,
+      "value": 310.914,
       "unit": "USDm",
-      "as_of": "2026-06-30",
+      "as_of": "2026-09-30",
       "source": "SEC EDGAR",
       "series_id": "LDI_SE",
       "url": "https://data.sec.gov/submissions/CIK0001831631.json"
