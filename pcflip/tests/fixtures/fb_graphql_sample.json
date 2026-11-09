@@ -1,0 +1,16 @@
+{"data": {"marketplace_search": {"feed_units": {"edges": [
+  {"node": {"__typename": "MarketplaceFeedListingStoryObject", "listing": {
+      "id": "1234567890123456", "marketplace_listing_title": "Gaming PC RTX 4070 Super 7800X3D 32GB DDR5",
+      "listing_price": {"amount": "900.00", "formatted_amount": "$900", "currency": "USD"},
+      "location": {"reverse_geocode": {"city": "Austin", "state": "TX", "city_page": {"display_name": "Austin, TX"}}},
+      "primary_listing_photo": {"image": {"uri": "https://scontent.example/photo1.jpg"}},
+      "creation_time": 1762650000, "is_sold": false, "is_pending": false}}},
+  {"node": {"__typename": "MarketplaceFeedListingStoryObject", "listing": {
+      "id": "2234567890123456", "marketplace_listing_title": "RTX 3090 FE",
+      "listing_price": {"amount": "950", "formatted_amount": "$950"},
+      "location": {"reverse_geocode": {"city": "Round Rock", "state": "TX"}},
+      "primary_listing_photo": {"image": {"uri": "https://scontent.example/photo2.jpg"}}, "creation_time": 1762640000}}},
+  {"node": {"__typename": "MarketplaceFeedListingStoryObject", "listing": {
+      "id": "3234567890123456", "marketplace_listing_title": "Free monitor stand",
+      "listing_price": {"amount": "0", "formatted_amount": "Free"}, "location": {"reverse_geocode": {"city": "Austin"}}}}}
+]}}}}

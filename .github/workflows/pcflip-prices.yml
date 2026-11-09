@@ -1,0 +1,62 @@
+name: pcflip reference prices
+
+# Nightly refresh of the PC-parts reference prices used by pcflip/.
+# Without EBAY_CLIENT_ID / EBAY_CLIENT_SECRET repository secrets the job still runs and
+# rebuilds pcflip/data/prices.json + PRICES.md from manual/seed prices (it does not fail).
+
+on:
+  schedule:
+    - cron: '17 9 * * *'     # 09:17 UTC daily (~4:17 AM Central)
+  workflow_dispatch:
+  push:
+    paths:
+      - 'pcflip/watchlist.yaml'
+      - 'pcflip/reference_prices.yaml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: pcflip-prices
+  cancel-in-progress: false
+
+jobs:
+  prices:
+    runs-on: ubuntu-latest
+    env:
+      EBAY_CLIENT_ID: ${{ secrets.EBAY_CLIENT_ID }}
+      EBAY_CLIENT_SECRET: ${{ secrets.EBAY_CLIENT_SECRET }}
+      EBAY_ENV: production
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install pcflip (core deps only)
+        run: pip install -e ./pcflip
+
+      - name: Run tests
+        run: python -m pytest -q pcflip/tests
+
+      - name: Refresh prices and rebuild outputs
+        working-directory: pcflip
+        run: |
+          mkdir -p data
+          if [ -z "$EBAY_CLIENT_ID" ]; then
+            echo "::notice::EBAY_CLIENT_ID secret not set; writing seed/manual prices only"
+          fi
+          pcflip prices
+
+      - name: Commit updated price data
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add pcflip/data/prices.json pcflip/data/PRICES.md
+          if git diff --staged --quiet; then
+            echo "No price changes to commit"
+          else
+            git commit -m "pcflip: refresh reference prices $(date -u +%Y-%m-%dT%H:%MZ)"
+            git push
+          fi

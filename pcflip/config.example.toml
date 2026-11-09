@@ -1,0 +1,96 @@
+# pcflip configuration. Copy to config.toml and edit. Secrets go in .env, not here.
+
+poll_interval_seconds = 300          # how often `pcflip watch` rescans Facebook
+# data_dir = "data"                  # DB, session state, reports live here
+
+[economics]
+ebay_fee_rate = 0.136                # verify against eBay's current fee table for your account
+ebay_per_order_fee = 0.40
+local_sale_factor = 0.95             # local buyers pay ~95% of eBay sold for a single part
+prebuilt_whole_factor = 0.78         # whole PC sells locally for ~78% of its parts-sum
+prebuilt_other_parts_ddr5 = 150      # mobo+PSU+case+cooler allowance when not itemized
+prebuilt_other_parts_ddr4 = 100
+target_profit_floor = 100            # alert only if expected profit >= this...
+target_margin = 0.25                 # ...and >= this share of the exit price
+strong_buy_ratio = 0.90
+watch_ratio = 1.15
+active_to_sold_factor = 0.92         # eBay active p25 -> estimated sold median
+
+[economics.shipping_estimate]
+gpu = 15
+cpu = 6
+ram = 6
+ssd = 6
+prebuilt = 60
+
+[facebook]
+# Location slug from a Marketplace URL: facebook.com/marketplace/<slug>/...
+# e.g. "austin", "dallas", "nyc", or a numeric location id.
+location = "austin"
+radius_km = 40
+headless = true
+scan_item_pages = true               # open each new listing for the full description (slower, better valuations)
+max_item_pages_per_scan = 25
+# state_path = "data/fb_state.json"  # saved login session from `pcflip fb-login`
+
+# One entry per Marketplace search. Keep queries short; Facebook's search is loose.
+[[searches]]
+query = "gaming pc"
+min_price = 300
+max_price = 2500
+
+[[searches]]
+query = "gaming computer"
+min_price = 300
+max_price = 2500
+
+[[searches]]
+query = "rtx 3090"
+
+[[searches]]
+query = "rtx 4090"
+
+[[searches]]
+query = "rtx 4080"
+
+[[searches]]
+query = "rtx 4070"
+
+[[searches]]
+query = "ddr5 ram"
+
+[[searches]]
+query = "32gb ddr5"
+
+[[searches]]
+query = "64gb ram"
+
+[[searches]]
+query = "nvme ssd 2tb"
+
+[[searches]]
+query = "ryzen 7800x3d"
+
+[[searches]]
+query = "ryzen 9"
+
+[apify]
+# Optional hosted scraper instead of local Playwright. Set APIFY_TOKEN + APIFY_ACTOR_ID in .env.
+enabled = false
+# input_template is merged with {"searchQueries": [...], "location": "..."}; adjust to your actor's schema.
+input_template = { maxItems = 60 }
+
+[alerts]
+channels = ["console"]               # add "discord", "telegram", "ntfy" once env vars are set
+min_verdict = "WATCH"                # alert on WATCH, BUY, STRONG_BUY (or set "BUY")
+realert_on_price_drop_pct = 10       # re-alert a known listing if its price drops this much
+
+[llm]
+enabled = false                      # set true with ANTHROPIC_API_KEY to extract specs from messy prebuilt listings
+model = "claude-opus-5-5"
+effort = "low"
+only_for_prebuilts = true
+
+[ebay]
+marketplace_id = "EBAY_US"
+limit_per_query = 100

@@ -1,0 +1,653 @@
+{
+  "generated_at": "2026-11-09T06:12:24+00:00",
+  "skus": {
+    "rtx-5090": {
+      "name": "NVIDIA RTX 5090 32GB",
+      "category": "gpu",
+      "est_sold": 6500.0,
+      "source": "seed",
+      "confidence": "low",
+      "as_of": "2026-11-09"
+    },
+    "rtx-4090": {
+      "name": "NVIDIA RTX 4090 24GB",
+      "category": "gpu",
+      "est_sold": 2500.0,
+      "source": "seed",
+      "confidence": "low",
+      "as_of": "2026-11-09"
+    },
+    "rtx-3090-ti": {
+      "name": "NVIDIA RTX 3090 Ti 24GB",
+      "category": "gpu",
+      "est_sold": 1350.0,
+      "source": "seed",
+      "confidence": "low",
+      "as_of": "2026-11-09"
+    },
+    "rtx-3090": {
+      "name": "NVIDIA RTX 3090 24GB",
+      "category": "gpu",
+      "est_sold": 1200.0,
+      "source": "seed",
+      "confidence": "low",
+      "as_of": "2026-11-09"
+    },
+    "rtx-a6000": {
+      "name": "NVIDIA RTX A6000 48GB",
+      "category": "gpu",
+      "est_sold": 4500.0,
+      "source": "seed",
+      "confidence": "low",
+      "as_of": "2026-11-09"
+    },
+    "rtx-a5000": {
+      "name": "NVIDIA RTX A5000 24GB",
+      "category": "gpu",
+      "est_sold": 1800.0,
+      "source": "seed",
+      "confidence": "low",
+      "as_of": "2026-11-09"
+    },
+    "rtx-a4000": {
+      "name": "NVIDIA RTX A4000 16GB",
+      "category": "gpu",
+      "est_sold": 800.0,
+      "source": "seed",
+      "confidence": "low",
+      "as_of": "2026-11-09"
+    },
+    "tesla-p40": {
+      "name": "NVIDIA Tesla P40 24GB",
+      "category": "gpu",
+      "est_sold": 400.0,
+      "source": "seed",
+      "confidence": "low",
+      "as_of": "2026-11-09"
+    },
+    "rx-7900-xtx": {
+      "name": "AMD RX 7900 XTX 24GB",
+      "category": "gpu",
+      "est_sold": 1100.0,
+      "source": "seed",
+      "confidence": "low",
+      "as_of": "2026-11-09"
+    },
+    "rtx-5080": {
+      "name": "NVIDIA RTX 5080 16GB",
+      "category": "gpu",
+      "est_sold": 1600.0,
+      "source": "seed",
+      "confidence": "low",
+      "as_of": "2026-11-09"
+    },
+    "rtx-5070-ti": {
+      "name": "NVIDIA RTX 5070 Ti 16GB",
+      "category": "gpu",
+      "est_sold": 1200.0,
+      "source": "seed",
+      "confidence": "low",
+      "as_of": "2026-11-09"
+    },
+    "rtx-5070": {
+      "name": "NVIDIA RTX 5070 12GB",
+      "category": "gpu",
+      "est_sold": 800.0,
+      "source": "seed",
+      "confidence": "low",
+      "as_of": "2026-11-09"
+    },
+    "rtx-5060-ti-16gb": {
+      "name": "NVIDIA RTX 5060 Ti 16GB",
+      "category": "gpu",
+      "est_sold": 600.0,
+      "source": "seed",
+      "confidence": "low",
+      "as_of": "2026-11-09"
+    },
+    "rtx-5060-ti": {
+      "name": "NVIDIA RTX 5060 Ti 8GB",
+      "category": "gpu",
+      "est_sold": 420.0,
+      "source": "seed",
+      "confidence": "low",
+      "as_of": "2026-11-09"
+    },
+    "rtx-4080-super": {
+      "name": "NVIDIA RTX 4080 Super 16GB",
+      "category": "gpu",
+      "est_sold": 1550.0,
+      "source": "seed",
+      "confidence": "low",
+      "as_of": "2026-11-09"
+    },
+    "rtx-4080": {
+      "name": "NVIDIA RTX 4080 16GB",
+      "category": "gpu",
+      "est_sold": 1450.0,
+      "source": "seed",
+      "confidence": "low",
+      "as_of": "2026-11-09"
+    },
+    "rtx-4070-ti-super": {
+      "name": "NVIDIA RTX 4070 Ti Super 16GB",
+      "category": "gpu",
+      "est_sold": 1100.0,
+      "source": "seed",
+      "confidence": "low",
+      "as_of": "2026-11-09"
+    },
+    "rtx-4070-ti": {
+      "name": "NVIDIA RTX 4070 Ti 12GB",
+      "category": "gpu",
+      "est_sold": 900.0,
+      "source": "seed",
+      "confidence": "low",
+      "as_of": "2026-11-09"
+    },
+    "rtx-4070-super": {
+      "name": "NVIDIA RTX 4070 Super 12GB",
+      "category": "gpu",
+      "est_sold": 800.0,
+      "source": "seed",
+      "confidence": "low",
+      "as_of": "2026-11-09"
+    },
+    "rtx-4070": {
+      "name": "NVIDIA RTX 4070 12GB",
+      "category": "gpu",
+      "est_sold": 700.0,
+      "source": "seed",
+      "confidence": "low",
+      "as_of": "2026-11-09"
+    },
+    "rtx-4060-ti-16gb": {
+      "name": "NVIDIA RTX 4060 Ti 16GB",
+      "category": "gpu",
+      "est_sold": 550.0,
+      "source": "seed",
+      "confidence": "low",
+      "as_of": "2026-11-09"
+    },
+    "rtx-4060-ti": {
+      "name": "NVIDIA RTX 4060 Ti 8GB",
+      "category": "gpu",
+      "est_sold": 400.0,
+      "source": "seed",
+      "confidence": "low",
+      "as_of": "2026-11-09"
+    },
+    "rtx-4060": {
+      "name": "NVIDIA RTX 4060 8GB",
+      "category": "gpu",
+      "est_sold": 350.0,
+      "source": "seed",
+      "confidence": "low",
+      "as_of": "2026-11-09"
+    },
+    "rtx-3080-ti": {
+      "name": "NVIDIA RTX 3080 Ti 12GB",
+      "category": "gpu",
+      "est_sold": 750.0,
+      "source": "seed",
+      "confidence": "low",
+      "as_of": "2026-11-09"
+    },
+    "rtx-3080": {
+      "name": "NVIDIA RTX 3080 10GB/12GB",
+      "category": "gpu",
+      "est_sold": 600.0,
+      "source": "seed",
+      "confidence": "low",
+      "as_of": "2026-11-09"
+    },
+    "rtx-3070-ti": {
+      "name": "NVIDIA RTX 3070 Ti 8GB",
+      "category": "gpu",
+      "est_sold": 420.0,
+      "source": "seed",
+      "confidence": "low",
+      "as_of": "2026-11-09"
+    },
+    "rtx-3070": {
+      "name": "NVIDIA RTX 3070 8GB",
+      "category": "gpu",
+      "est_sold": 400.0,
+      "source": "seed",
+      "confidence": "low",
+      "as_of": "2026-11-09"
+    },
+    "rtx-3060-ti": {
+      "name": "NVIDIA RTX 3060 Ti 8GB",
+      "category": "gpu",
+      "est_sold": 320.0,
+      "source": "seed",
+      "confidence": "low",
+      "as_of": "2026-11-09"
+    },
+    "rtx-3060": {
+      "name": "NVIDIA RTX 3060 12GB",
+      "category": "gpu",
+      "est_sold": 350.0,
+      "source": "seed",
+      "confidence": "low",
+      "as_of": "2026-11-09"
+    },
+    "rx-9070-xt": {
+      "name": "AMD RX 9070 XT 16GB",
+      "category": "gpu",
+      "est_sold": 800.0,
+      "source": "seed",
+      "confidence": "low",
+      "as_of": "2026-11-09"
+    },
+    "rx-7800-xt": {
+      "name": "AMD RX 7800 XT 16GB",
+      "category": "gpu",
+      "est_sold": 600.0,
+      "source": "seed",
+      "confidence": "low",
+      "as_of": "2026-11-09"
+    },
+    "rx-6800-xt": {
+      "name": "AMD RX 6800 XT 16GB",
+      "category": "gpu",
+      "est_sold": 480.0,
+      "source": "seed",
+      "confidence": "low",
+      "as_of": "2026-11-09"
+    },
+    "ryzen-9800x3d": {
+      "name": "AMD Ryzen 7 9800X3D",
+      "category": "cpu",
+      "est_sold": 480.0,
+      "source": "seed",
+      "confidence": "low",
+      "as_of": "2026-11-09"
+    },
+    "ryzen-9950x3d": {
+      "name": "AMD Ryzen 9 9950X3D",
+      "category": "cpu",
+      "est_sold": 650.0,
+      "source": "seed",
+      "confidence": "low",
+      "as_of": "2026-11-09"
+    },
+    "ryzen-9950x": {
+      "name": "AMD Ryzen 9 9950X",
+      "category": "cpu",
+      "est_sold": 550.0,
+      "source": "seed",
+      "confidence": "low",
+      "as_of": "2026-11-09"
+    },
+    "ryzen-9900x": {
+      "name": "AMD Ryzen 9 9900X",
+      "category": "cpu",
+      "est_sold": 350.0,
+      "source": "seed",
+      "confidence": "low",
+      "as_of": "2026-11-09"
+    },
+    "ryzen-9700x": {
+      "name": "AMD Ryzen 7 9700X",
+      "category": "cpu",
+      "est_sold": 260.0,
+      "source": "seed",
+      "confidence": "low",
+      "as_of": "2026-11-09"
+    },
+    "ryzen-7800x3d": {
+      "name": "AMD Ryzen 7 7800X3D",
+      "category": "cpu",
+      "est_sold": 380.0,
+      "source": "seed",
+      "confidence": "low",
+      "as_of": "2026-11-09"
+    },
+    "ryzen-7950x3d": {
+      "name": "AMD Ryzen 9 7950X3D",
+      "category": "cpu",
+      "est_sold": 520.0,
+      "source": "seed",
+      "confidence": "low",
+      "as_of": "2026-11-09"
+    },
+    "ryzen-7950x": {
+      "name": "AMD Ryzen 9 7950X",
+      "category": "cpu",
+      "est_sold": 450.0,
+      "source": "seed",
+      "confidence": "low",
+      "as_of": "2026-11-09"
+    },
+    "ryzen-7900x": {
+      "name": "AMD Ryzen 9 7900X / 7900",
+      "category": "cpu",
+      "est_sold": 300.0,
+      "source": "seed",
+      "confidence": "low",
+      "as_of": "2026-11-09"
+    },
+    "ryzen-7700x": {
+      "name": "AMD Ryzen 7 7700X / 7700",
+      "category": "cpu",
+      "est_sold": 230.0,
+      "source": "seed",
+      "confidence": "low",
+      "as_of": "2026-11-09"
+    },
+    "ryzen-7600x": {
+      "name": "AMD Ryzen 5 7600X / 7600",
+      "category": "cpu",
+      "est_sold": 170.0,
+      "source": "seed",
+      "confidence": "low",
+      "as_of": "2026-11-09"
+    },
+    "ryzen-5800x3d": {
+      "name": "AMD Ryzen 7 5800X3D",
+      "category": "cpu",
+      "est_sold": 250.0,
+      "source": "seed",
+      "confidence": "low",
+      "as_of": "2026-11-09"
+    },
+    "ryzen-5700x3d": {
+      "name": "AMD Ryzen 7 5700X3D",
+      "category": "cpu",
+      "est_sold": 200.0,
+      "source": "seed",
+      "confidence": "low",
+      "as_of": "2026-11-09"
+    },
+    "ryzen-5800x": {
+      "name": "AMD Ryzen 7 5800X",
+      "category": "cpu",
+      "est_sold": 140.0,
+      "source": "seed",
+      "confidence": "low",
+      "as_of": "2026-11-09"
+    },
+    "ryzen-5600x": {
+      "name": "AMD Ryzen 5 5600X / 5600",
+      "category": "cpu",
+      "est_sold": 95.0,
+      "source": "seed",
+      "confidence": "low",
+      "as_of": "2026-11-09"
+    },
+    "i9-14900k": {
+      "name": "Intel Core i9-14900K/KF",
+      "category": "cpu",
+      "est_sold": 400.0,
+      "source": "seed",
+      "confidence": "low",
+      "as_of": "2026-11-09"
+    },
+    "i7-14700k": {
+      "name": "Intel Core i7-14700K/KF",
+      "category": "cpu",
+      "est_sold": 300.0,
+      "source": "seed",
+      "confidence": "low",
+      "as_of": "2026-11-09"
+    },
+    "i9-13900k": {
+      "name": "Intel Core i9-13900K/KF",
+      "category": "cpu",
+      "est_sold": 330.0,
+      "source": "seed",
+      "confidence": "low",
+      "as_of": "2026-11-09"
+    },
+    "i7-13700k": {
+      "name": "Intel Core i7-13700K/KF",
+      "category": "cpu",
+      "est_sold": 260.0,
+      "source": "seed",
+      "confidence": "low",
+      "as_of": "2026-11-09"
+    },
+    "i5-13600k": {
+      "name": "Intel Core i5-13600K/KF",
+      "category": "cpu",
+      "est_sold": 200.0,
+      "source": "seed",
+      "confidence": "low",
+      "as_of": "2026-11-09"
+    },
+    "i7-12700k": {
+      "name": "Intel Core i7-12700K/KF",
+      "category": "cpu",
+      "est_sold": 180.0,
+      "source": "seed",
+      "confidence": "low",
+      "as_of": "2026-11-09"
+    },
+    "core-ultra-9-285k": {
+      "name": "Intel Core Ultra 9 285K",
+      "category": "cpu",
+      "est_sold": 480.0,
+      "source": "seed",
+      "confidence": "low",
+      "as_of": "2026-11-09"
+    },
+    "core-ultra-7-265k": {
+      "name": "Intel Core Ultra 7 265K",
+      "category": "cpu",
+      "est_sold": 280.0,
+      "source": "seed",
+      "confidence": "low",
+      "as_of": "2026-11-09"
+    },
+    "ddr5-16gb": {
+      "name": "DDR5 16GB kit (desktop)",
+      "category": "ram",
+      "est_sold": 170.0,
+      "source": "seed",
+      "confidence": "low",
+      "as_of": "2026-11-09"
+    },
+    "ddr5-32gb": {
+      "name": "DDR5 32GB kit (desktop)",
+      "category": "ram",
+      "est_sold": 380.0,
+      "source": "seed",
+      "confidence": "low",
+      "as_of": "2026-11-09"
+    },
+    "ddr5-48gb": {
+      "name": "DDR5 48GB kit (desktop)",
+      "category": "ram",
+      "est_sold": 560.0,
+      "source": "seed",
+      "confidence": "low",
+      "as_of": "2026-11-09"
+    },
+    "ddr5-64gb": {
+      "name": "DDR5 64GB kit (desktop)",
+      "category": "ram",
+      "est_sold": 850.0,
+      "source": "seed",
+      "confidence": "low",
+      "as_of": "2026-11-09"
+    },
+    "ddr5-96gb": {
+      "name": "DDR5 96GB kit (desktop)",
+      "category": "ram",
+      "est_sold": 1250.0,
+      "source": "seed",
+      "confidence": "low",
+      "as_of": "2026-11-09"
+    },
+    "ddr5-128gb": {
+      "name": "DDR5 128GB kit (desktop)",
+      "category": "ram",
+      "est_sold": 1650.0,
+      "source": "seed",
+      "confidence": "low",
+      "as_of": "2026-11-09"
+    },
+    "ddr4-8gb": {
+      "name": "DDR4 8GB (desktop)",
+      "category": "ram",
+      "est_sold": 35.0,
+      "source": "seed",
+      "confidence": "low",
+      "as_of": "2026-11-09"
+    },
+    "ddr4-16gb": {
+      "name": "DDR4 16GB kit (desktop)",
+      "category": "ram",
+      "est_sold": 70.0,
+      "source": "seed",
+      "confidence": "low",
+      "as_of": "2026-11-09"
+    },
+    "ddr4-32gb": {
+      "name": "DDR4 32GB kit (desktop)",
+      "category": "ram",
+      "est_sold": 150.0,
+      "source": "seed",
+      "confidence": "low",
+      "as_of": "2026-11-09"
+    },
+    "ddr4-64gb": {
+      "name": "DDR4 64GB kit (desktop)",
+      "category": "ram",
+      "est_sold": 320.0,
+      "source": "seed",
+      "confidence": "low",
+      "as_of": "2026-11-09"
+    },
+    "ddr5-sodimm-16gb": {
+      "name": "DDR5 SODIMM 16GB (laptop)",
+      "category": "ram",
+      "est_sold": 160.0,
+      "source": "seed",
+      "confidence": "low",
+      "as_of": "2026-11-09"
+    },
+    "ddr5-sodimm-32gb": {
+      "name": "DDR5 SODIMM 32GB (laptop)",
+      "category": "ram",
+      "est_sold": 340.0,
+      "source": "seed",
+      "confidence": "low",
+      "as_of": "2026-11-09"
+    },
+    "ddr5-sodimm-64gb": {
+      "name": "DDR5 SODIMM 64GB (laptop)",
+      "category": "ram",
+      "est_sold": 700.0,
+      "source": "seed",
+      "confidence": "low",
+      "as_of": "2026-11-09"
+    },
+    "ddr4-sodimm-16gb": {
+      "name": "DDR4 SODIMM 16GB (laptop)",
+      "category": "ram",
+      "est_sold": 55.0,
+      "source": "seed",
+      "confidence": "low",
+      "as_of": "2026-11-09"
+    },
+    "ddr4-sodimm-32gb": {
+      "name": "DDR4 SODIMM 32GB (laptop)",
+      "category": "ram",
+      "est_sold": 120.0,
+      "source": "seed",
+      "confidence": "low",
+      "as_of": "2026-11-09"
+    },
+    "ddr4-ecc-rdimm-32gb": {
+      "name": "DDR4 ECC RDIMM 32GB (server)",
+      "category": "ram",
+      "est_sold": 90.0,
+      "source": "seed",
+      "confidence": "low",
+      "as_of": "2026-11-09"
+    },
+    "ddr4-ecc-rdimm-64gb": {
+      "name": "DDR4 ECC RDIMM 64GB (server)",
+      "category": "ram",
+      "est_sold": 190.0,
+      "source": "seed",
+      "confidence": "low",
+      "as_of": "2026-11-09"
+    },
+    "nvme-512gb": {
+      "name": "NVMe SSD 500GB/512GB",
+      "category": "ssd",
+      "est_sold": 55.0,
+      "source": "seed",
+      "confidence": "low",
+      "as_of": "2026-11-09"
+    },
+    "nvme-1tb": {
+      "name": "NVMe SSD 1TB",
+      "category": "ssd",
+      "est_sold": 110.0,
+      "source": "seed",
+      "confidence": "low",
+      "as_of": "2026-11-09"
+    },
+    "nvme-2tb": {
+      "name": "NVMe SSD 2TB",
+      "category": "ssd",
+      "est_sold": 220.0,
+      "source": "seed",
+      "confidence": "low",
+      "as_of": "2026-11-09"
+    },
+    "nvme-4tb": {
+      "name": "NVMe SSD 4TB",
+      "category": "ssd",
+      "est_sold": 450.0,
+      "source": "seed",
+      "confidence": "low",
+      "as_of": "2026-11-09"
+    },
+    "nvme-8tb": {
+      "name": "NVMe SSD 8TB",
+      "category": "ssd",
+      "est_sold": 900.0,
+      "source": "seed",
+      "confidence": "low",
+      "as_of": "2026-11-09"
+    },
+    "sata-ssd-512gb": {
+      "name": "SATA SSD 500GB/512GB",
+      "category": "ssd",
+      "est_sold": 35.0,
+      "source": "seed",
+      "confidence": "low",
+      "as_of": "2026-11-09"
+    },
+    "sata-ssd-1tb": {
+      "name": "SATA SSD 1TB",
+      "category": "ssd",
+      "est_sold": 75.0,
+      "source": "seed",
+      "confidence": "low",
+      "as_of": "2026-11-09"
+    },
+    "sata-ssd-2tb": {
+      "name": "SATA SSD 2TB",
+      "category": "ssd",
+      "est_sold": 150.0,
+      "source": "seed",
+      "confidence": "low",
+      "as_of": "2026-11-09"
+    },
+    "sata-ssd-4tb": {
+      "name": "SATA SSD 4TB",
+      "category": "ssd",
+      "est_sold": 300.0,
+      "source": "seed",
+      "confidence": "low",
+      "as_of": "2026-11-09"
+    }
+  }
+}

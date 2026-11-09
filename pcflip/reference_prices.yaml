@@ -1,0 +1,21 @@
+# Manual sold-price overrides: the most trustworthy input the engine has.
+#
+# Fill this weekly from Terapeak (eBay Seller Hub -> Research -> Product research),
+# using the 90-day SOLD median for USED, working items. Entries newer than
+# `max_age_days` beat every automated source. Older entries are ignored.
+#
+# Format:
+#   <sku key from watchlist.yaml>:
+#     sold_median: <USD>
+#     as_of: "YYYY-MM-DD"
+#     n: <number of sales, optional>
+#     note: <optional>
+
+max_age_days: 21
+
+prices: {}
+#  rtx-3090:
+#    sold_median: 1180
+#    as_of: "2026-11-09"
+#    n: 142
+#    note: "Terapeak 90d, used, excludes Ti"

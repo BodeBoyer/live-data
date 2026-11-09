@@ -1,0 +1,609 @@
+# pcflip watchlist. Each SKU: how to recognize it in listing text, how to price it on eBay,
+# and a seed price so the engine works before any live feed is configured.
+#
+# SEED PRICES ARE ESTIMATES (used, working, eBay sold median, USD) as of 2026-11-09.
+# They were set from public price trackers during the Nov 2026 DRAM/NAND shortage and are
+# marked confidence: low. Replace them with real data by either:
+#   1. `pcflip prices`  (eBay Browse API, needs EBAY_CLIENT_ID/SECRET), or
+#   2. filling reference_prices.yaml from Terapeak (eBay Seller Hub -> Research), weekly.
+# The resolver always prefers fresher, higher-confidence sources over these seeds.
+#
+# Pattern notes: text is lowercased, hyphens become spaces, whitespace collapsed before matching.
+# RAM and SSD SKUs have no patterns; the extractor derives keys like ddr5-32gb / nvme-2tb itself.
+
+version: 1
+updated: "2026-11-09"
+
+defaults:
+  gpu:
+    ebay_category_id: "27386"          # Computer Components > Graphics/Video Cards
+    must_not: ["box only", "empty box", "for parts", "not working", "no video", "laptop", "backplate",
+               "bracket", "shroud", "cable", "cooler only", "fan only", "fans", "heatsink", "water block",
+               "waterblock", "sticker", "mining rig", "lot of", "bundle of", "read description", "repair"]
+  cpu:
+    ebay_category_id: "164"            # CPUs/Processors
+    must_not: ["for parts", "not working", "bent pins", "delidded", "box only", "cooler only", "lot of", "combo", "motherboard"]
+  ram:
+    ebay_category_id: "170083"         # Memory (RAM)
+    must_not: ["for parts", "not working", "lot of", "mixed", "heatsink only", "ecc", "registered", "rdimm", "server", "laptop", "sodimm", "so-dimm"]
+  ssd:
+    ebay_category_id: "175669"         # Solid State Drives
+    must_not: ["for parts", "not working", "lot of", "enclosure", "heatsink only", "adapter", "case", "bad sectors", "hdd"]
+
+skus:
+  # ------------------------------------------------------------------ GPUs: 24GB+ (local-AI sweet spot)
+  - key: rtx-5090
+    name: NVIDIA RTX 5090 32GB
+    category: gpu
+    vram_gb: 32
+    patterns: ['(?<!\d)(?:rtx\s*)?5090(?!\d)']
+    ebay: { query: "RTX 5090", must: ["5090"], price_range: [2500, 12000] }
+    seed: { est_sold: 6500, confidence: low, note: "trackers: $6.2k-7.0k sold median, Nov 2026" }
+
+  - key: rtx-4090
+    name: NVIDIA RTX 4090 24GB
+    category: gpu
+    vram_gb: 24
+    patterns: ['(?<!\d)(?:rtx\s*)?4090(?!\d)(?!\s*(?:laptop|mobile|m\b))']
+    ebay: { query: "RTX 4090", must: ["4090"], price_range: [1200, 5000] }
+    seed: { est_sold: 2500, confidence: low, note: "trackers: $2.4k-2.7k, Nov 2026" }
+
+  - key: rtx-3090-ti
+    name: NVIDIA RTX 3090 Ti 24GB
+    category: gpu
+    vram_gb: 24
+    patterns: ['(?<!\d)(?:rtx\s*)?3090\s*ti\b']
+    ebay: { query: "RTX 3090 Ti", must: ["3090", "ti"], price_range: [600, 3000] }
+    seed: { est_sold: 1350, confidence: low }
+
+  - key: rtx-3090
+    name: NVIDIA RTX 3090 24GB
+    category: gpu
+    vram_gb: 24
+    patterns: ['(?<!\d)(?:rtx\s*)?3090(?!\d)(?!\s*ti\b)']
+    ebay: { query: "RTX 3090", must: ["3090"], must_not_extra: ["ti"], price_range: [500, 2500] }
+    seed: { est_sold: 1200, confidence: low, note: "trackers: $1.05k-1.5k sold median, Nov 2026" }
+
+  - key: rtx-a6000
+    name: NVIDIA RTX A6000 48GB
+    category: gpu
+    vram_gb: 48
+    patterns: ['\brtx\s*a6000\b', '\ba6000\b']
+    ebay: { query: "RTX A6000", must: ["a6000"], price_range: [2000, 9000] }
+    seed: { est_sold: 4500, confidence: low }
+
+  - key: rtx-a5000
+    name: NVIDIA RTX A5000 24GB
+    category: gpu
+    vram_gb: 24
+    patterns: ['\brtx\s*a5000\b', '\ba5000\b']
+    ebay: { query: "RTX A5000", must: ["a5000"], price_range: [800, 4000] }
+    seed: { est_sold: 1800, confidence: low }
+
+  - key: rtx-a4000
+    name: NVIDIA RTX A4000 16GB
+    category: gpu
+    vram_gb: 16
+    patterns: ['\brtx\s*a4000\b', '\ba4000\b']
+    ebay: { query: "RTX A4000", must: ["a4000"], price_range: [300, 2000] }
+    seed: { est_sold: 800, confidence: low }
+
+  - key: tesla-p40
+    name: NVIDIA Tesla P40 24GB
+    category: gpu
+    vram_gb: 24
+    patterns: ['\btesla\s*p40\b', '\bp40\b(?=.*(?:tesla|nvidia|24\s*gb))']
+    ebay: { query: "Tesla P40 24GB", must: ["p40"], price_range: [150, 1200] }
+    seed: { est_sold: 400, confidence: low }
+
+  - key: rx-7900-xtx
+    name: AMD RX 7900 XTX 24GB
+    category: gpu
+    vram_gb: 24
+    patterns: ['\brx\s*7900\s*xtx\b', '(?<!\d)7900\s*xtx\b']
+    ebay: { query: "RX 7900 XTX", must: ["7900", "xtx"], price_range: [400, 2500] }
+    seed: { est_sold: 1100, confidence: low }
+
+  # ------------------------------------------------------------------ GPUs: 16GB / 12GB tier
+  - key: rtx-5080
+    name: NVIDIA RTX 5080 16GB
+    category: gpu
+    vram_gb: 16
+    patterns: ['(?<!\d)(?:rtx\s*)?5080(?!\d)']
+    ebay: { query: "RTX 5080", must: ["5080"], price_range: [700, 4000] }
+    seed: { est_sold: 1600, confidence: low }
+
+  - key: rtx-5070-ti
+    name: NVIDIA RTX 5070 Ti 16GB
+    category: gpu
+    vram_gb: 16
+    patterns: ['(?<!\d)(?:rtx\s*)?5070\s*ti\b']
+    ebay: { query: "RTX 5070 Ti", must: ["5070", "ti"], price_range: [500, 3000] }
+    seed: { est_sold: 1200, confidence: low }
+
+  - key: rtx-5070
+    name: NVIDIA RTX 5070 12GB
+    category: gpu
+    vram_gb: 12
+    patterns: ['(?<!\d)(?:rtx\s*)?5070(?!\d)(?!\s*ti\b)']
+    ebay: { query: "RTX 5070", must: ["5070"], must_not_extra: ["ti"], price_range: [350, 2000] }
+    seed: { est_sold: 800, confidence: low }
+
+  - key: rtx-5060-ti-16gb
+    name: NVIDIA RTX 5060 Ti 16GB
+    category: gpu
+    vram_gb: 16
+    patterns: ['(?<!\d)(?:rtx\s*)?5060\s*ti\s*16\s*gb']
+    ebay: { query: "RTX 5060 Ti 16GB", must: ["5060", "ti", "16"], price_range: [250, 1500] }
+    seed: { est_sold: 600, confidence: low }
+
+  - key: rtx-5060-ti
+    name: NVIDIA RTX 5060 Ti 8GB
+    category: gpu
+    vram_gb: 8
+    patterns: ['(?<!\d)(?:rtx\s*)?5060\s*ti\b(?!\s*16)']
+    ebay: { query: "RTX 5060 Ti 8GB", must: ["5060", "ti"], must_not_extra: ["16gb", "16 gb"], price_range: [200, 1200] }
+    seed: { est_sold: 420, confidence: low }
+
+  - key: rtx-4080-super
+    name: NVIDIA RTX 4080 Super 16GB
+    category: gpu
+    vram_gb: 16
+    patterns: ['(?<!\d)(?:rtx\s*)?4080\s*super\b']
+    ebay: { query: "RTX 4080 Super", must: ["4080", "super"], price_range: [600, 3000] }
+    seed: { est_sold: 1550, confidence: low }
+
+  - key: rtx-4080
+    name: NVIDIA RTX 4080 16GB
+    category: gpu
+    vram_gb: 16
+    patterns: ['(?<!\d)(?:rtx\s*)?4080(?!\d)(?!\s*super\b)']
+    ebay: { query: "RTX 4080", must: ["4080"], must_not_extra: ["super"], price_range: [600, 3000] }
+    seed: { est_sold: 1450, confidence: low }
+
+  - key: rtx-4070-ti-super
+    name: NVIDIA RTX 4070 Ti Super 16GB
+    category: gpu
+    vram_gb: 16
+    patterns: ['(?<!\d)(?:rtx\s*)?4070\s*ti\s*super\b']
+    ebay: { query: "RTX 4070 Ti Super", must: ["4070", "ti", "super"], price_range: [400, 2500] }
+    seed: { est_sold: 1100, confidence: low }
+
+  - key: rtx-4070-ti
+    name: NVIDIA RTX 4070 Ti 12GB
+    category: gpu
+    vram_gb: 12
+    patterns: ['(?<!\d)(?:rtx\s*)?4070\s*ti\b(?!\s*super\b)']
+    ebay: { query: "RTX 4070 Ti", must: ["4070", "ti"], must_not_extra: ["super"], price_range: [350, 2000] }
+    seed: { est_sold: 900, confidence: low }
+
+  - key: rtx-4070-super
+    name: NVIDIA RTX 4070 Super 12GB
+    category: gpu
+    vram_gb: 12
+    patterns: ['(?<!\d)(?:rtx\s*)?4070\s*super\b']
+    ebay: { query: "RTX 4070 Super", must: ["4070", "super"], must_not_extra: ["ti"], price_range: [300, 2000] }
+    seed: { est_sold: 800, confidence: low }
+
+  - key: rtx-4070
+    name: NVIDIA RTX 4070 12GB
+    category: gpu
+    vram_gb: 12
+    patterns: ['(?<!\d)(?:rtx\s*)?4070(?!\d)(?!\s*(?:ti|super)\b)']
+    ebay: { query: "RTX 4070", must: ["4070"], must_not_extra: ["ti", "super"], price_range: [250, 1800] }
+    seed: { est_sold: 700, confidence: low }
+
+  - key: rtx-4060-ti-16gb
+    name: NVIDIA RTX 4060 Ti 16GB
+    category: gpu
+    vram_gb: 16
+    patterns: ['(?<!\d)(?:rtx\s*)?4060\s*ti\s*16\s*gb']
+    ebay: { query: "RTX 4060 Ti 16GB", must: ["4060", "ti", "16"], price_range: [200, 1200] }
+    seed: { est_sold: 550, confidence: low }
+
+  - key: rtx-4060-ti
+    name: NVIDIA RTX 4060 Ti 8GB
+    category: gpu
+    vram_gb: 8
+    patterns: ['(?<!\d)(?:rtx\s*)?4060\s*ti\b(?!\s*16)']
+    ebay: { query: "RTX 4060 Ti 8GB", must: ["4060", "ti"], must_not_extra: ["16gb", "16 gb"], price_range: [150, 1000] }
+    seed: { est_sold: 400, confidence: low }
+
+  - key: rtx-4060
+    name: NVIDIA RTX 4060 8GB
+    category: gpu
+    vram_gb: 8
+    patterns: ['(?<!\d)(?:rtx\s*)?4060(?!\d)(?!\s*ti\b)']
+    ebay: { query: "RTX 4060", must: ["4060"], must_not_extra: ["ti", "laptop"], price_range: [120, 900] }
+    seed: { est_sold: 350, confidence: low }
+
+  - key: rtx-3080-ti
+    name: NVIDIA RTX 3080 Ti 12GB
+    category: gpu
+    vram_gb: 12
+    patterns: ['(?<!\d)(?:rtx\s*)?3080\s*ti\b']
+    ebay: { query: "RTX 3080 Ti", must: ["3080", "ti"], price_range: [300, 1800] }
+    seed: { est_sold: 750, confidence: low }
+
+  - key: rtx-3080
+    name: NVIDIA RTX 3080 10GB/12GB
+    category: gpu
+    vram_gb: 10
+    patterns: ['(?<!\d)(?:rtx\s*)?3080(?!\d)(?!\s*ti\b)']
+    ebay: { query: "RTX 3080", must: ["3080"], must_not_extra: ["ti"], price_range: [250, 1500] }
+    seed: { est_sold: 600, confidence: low }
+
+  - key: rtx-3070-ti
+    name: NVIDIA RTX 3070 Ti 8GB
+    category: gpu
+    vram_gb: 8
+    patterns: ['(?<!\d)(?:rtx\s*)?3070\s*ti\b']
+    ebay: { query: "RTX 3070 Ti", must: ["3070", "ti"], price_range: [150, 1000] }
+    seed: { est_sold: 420, confidence: low }
+
+  - key: rtx-3070
+    name: NVIDIA RTX 3070 8GB
+    category: gpu
+    vram_gb: 8
+    patterns: ['(?<!\d)(?:rtx\s*)?3070(?!\d)(?!\s*ti\b)']
+    ebay: { query: "RTX 3070", must: ["3070"], must_not_extra: ["ti", "laptop"], price_range: [150, 900] }
+    seed: { est_sold: 400, confidence: low }
+
+  - key: rtx-3060-ti
+    name: NVIDIA RTX 3060 Ti 8GB
+    category: gpu
+    vram_gb: 8
+    patterns: ['(?<!\d)(?:rtx\s*)?3060\s*ti\b']
+    ebay: { query: "RTX 3060 Ti", must: ["3060", "ti"], price_range: [120, 800] }
+    seed: { est_sold: 320, confidence: low }
+
+  - key: rtx-3060
+    name: NVIDIA RTX 3060 12GB
+    category: gpu
+    vram_gb: 12
+    patterns: ['(?<!\d)(?:rtx\s*)?3060(?!\d)(?!\s*ti\b)']
+    ebay: { query: "RTX 3060 12GB", must: ["3060"], must_not_extra: ["ti", "laptop", "8gb"], price_range: [120, 800] }
+    seed: { est_sold: 350, confidence: low, note: "budget local-AI card; 12GB VRAM keeps it in demand" }
+
+  - key: rx-9070-xt
+    name: AMD RX 9070 XT 16GB
+    category: gpu
+    vram_gb: 16
+    patterns: ['\brx\s*9070\s*xt\b', '(?<!\d)9070\s*xt\b']
+    ebay: { query: "RX 9070 XT", must: ["9070", "xt"], price_range: [350, 2000] }
+    seed: { est_sold: 800, confidence: low }
+
+  - key: rx-7800-xt
+    name: AMD RX 7800 XT 16GB
+    category: gpu
+    vram_gb: 16
+    patterns: ['\brx\s*7800\s*xt\b', '(?<!\d)7800\s*xt\b']
+    ebay: { query: "RX 7800 XT", must: ["7800", "xt"], price_range: [250, 1500] }
+    seed: { est_sold: 600, confidence: low }
+
+  - key: rx-6800-xt
+    name: AMD RX 6800 XT 16GB
+    category: gpu
+    vram_gb: 16
+    patterns: ['\brx\s*6800\s*xt\b', '(?<!\d)6800\s*xt\b']
+    ebay: { query: "RX 6800 XT", must: ["6800", "xt"], price_range: [200, 1200] }
+    seed: { est_sold: 480, confidence: low }
+
+  # ------------------------------------------------------------------ CPUs
+  - key: ryzen-9800x3d
+    name: AMD Ryzen 7 9800X3D
+    category: cpu
+    platform: am5
+    patterns: ['(?<!\d)9800\s*x3d\b']
+    ebay: { query: "Ryzen 7 9800X3D", must: ["9800x3d"], price_range: [250, 1200] }
+    seed: { est_sold: 480, confidence: low }
+
+  - key: ryzen-9950x3d
+    name: AMD Ryzen 9 9950X3D
+    category: cpu
+    platform: am5
+    patterns: ['(?<!\d)9950\s*x3d\b']
+    ebay: { query: "Ryzen 9 9950X3D", must: ["9950x3d"], price_range: [350, 1500] }
+    seed: { est_sold: 650, confidence: low }
+
+  - key: ryzen-9950x
+    name: AMD Ryzen 9 9950X
+    category: cpu
+    platform: am5
+    patterns: ['(?<!\d)9950\s*x\b(?!\s*3d)']
+    ebay: { query: "Ryzen 9 9950X", must: ["9950x"], must_not_extra: ["x3d"], price_range: [300, 1200] }
+    seed: { est_sold: 550, confidence: low }
+
+  - key: ryzen-9900x
+    name: AMD Ryzen 9 9900X
+    category: cpu
+    platform: am5
+    patterns: ['(?<!\d)9900\s*x\b(?!\s*3d)']
+    ebay: { query: "Ryzen 9 9900X", must: ["9900x"], must_not_extra: ["x3d"], price_range: [200, 900] }
+    seed: { est_sold: 350, confidence: low }
+
+  - key: ryzen-9700x
+    name: AMD Ryzen 7 9700X
+    category: cpu
+    platform: am5
+    patterns: ['(?<!\d)9700\s*x\b']
+    ebay: { query: "Ryzen 7 9700X", must: ["9700x"], price_range: [150, 700] }
+    seed: { est_sold: 260, confidence: low }
+
+  - key: ryzen-7800x3d
+    name: AMD Ryzen 7 7800X3D
+    category: cpu
+    platform: am5
+    patterns: ['(?<!\d)7800\s*x3d\b']
+    ebay: { query: "Ryzen 7 7800X3D", must: ["7800x3d"], price_range: [200, 900] }
+    seed: { est_sold: 380, confidence: low }
+
+  - key: ryzen-7950x3d
+    name: AMD Ryzen 9 7950X3D
+    category: cpu
+    platform: am5
+    patterns: ['(?<!\d)7950\s*x3d\b']
+    ebay: { query: "Ryzen 9 7950X3D", must: ["7950x3d"], price_range: [300, 1200] }
+    seed: { est_sold: 520, confidence: low }
+
+  - key: ryzen-7950x
+    name: AMD Ryzen 9 7950X
+    category: cpu
+    platform: am5
+    patterns: ['(?<!\d)7950\s*x\b(?!\s*3d)']
+    ebay: { query: "Ryzen 9 7950X", must: ["7950x"], must_not_extra: ["x3d"], price_range: [200, 1000] }
+    seed: { est_sold: 450, confidence: low }
+
+  - key: ryzen-7900x
+    name: AMD Ryzen 9 7900X / 7900
+    category: cpu
+    platform: am5
+    patterns: ['(?<!\d)7900\s*x\b(?!\s*3d)', '\bryzen\s*(?:9\s*)?7900\b(?!\s*(?:x3d|xt|xtx|gre))']
+    ebay: { query: "Ryzen 9 7900X", must: ["7900"], must_not_extra: ["x3d", "xt"], price_range: [150, 800] }
+    seed: { est_sold: 300, confidence: low }
+
+  - key: ryzen-7700x
+    name: AMD Ryzen 7 7700X / 7700
+    category: cpu
+    platform: am5
+    patterns: ['(?<!\d)7700\s*x\b', '\bryzen\s*(?:7\s*)?7700\b(?!\s*xt)']
+    ebay: { query: "Ryzen 7 7700X", must: ["7700"], must_not_extra: ["xt"], price_range: [100, 600] }
+    seed: { est_sold: 230, confidence: low }
+
+  - key: ryzen-7600x
+    name: AMD Ryzen 5 7600X / 7600
+    category: cpu
+    platform: am5
+    patterns: ['(?<!\d)7600\s*x\b(?!\s*3d)', '\bryzen\s*(?:5\s*)?7600\b(?!\s*(?:xt|x3d))']
+    ebay: { query: "Ryzen 5 7600X", must: ["7600"], must_not_extra: ["xt", "x3d"], price_range: [80, 500] }
+    seed: { est_sold: 170, confidence: low }
+
+  - key: ryzen-5800x3d
+    name: AMD Ryzen 7 5800X3D
+    category: cpu
+    platform: am4
+    patterns: ['(?<!\d)5800\s*x3d\b']
+    ebay: { query: "Ryzen 7 5800X3D", must: ["5800x3d"], price_range: [120, 600] }
+    seed: { est_sold: 250, confidence: low }
+
+  - key: ryzen-5700x3d
+    name: AMD Ryzen 7 5700X3D
+    category: cpu
+    platform: am4
+    patterns: ['(?<!\d)5700\s*x3d\b']
+    ebay: { query: "Ryzen 7 5700X3D", must: ["5700x3d"], price_range: [100, 500] }
+    seed: { est_sold: 200, confidence: low }
+
+  - key: ryzen-5800x
+    name: AMD Ryzen 7 5800X
+    category: cpu
+    platform: am4
+    patterns: ['(?<!\d)5800\s*x\b(?!\s*3d)']
+    ebay: { query: "Ryzen 7 5800X", must: ["5800x"], must_not_extra: ["x3d"], price_range: [60, 400] }
+    seed: { est_sold: 140, confidence: low }
+
+  - key: ryzen-5600x
+    name: AMD Ryzen 5 5600X / 5600
+    category: cpu
+    platform: am4
+    patterns: ['(?<!\d)5600\s*x\b(?!\s*3d)', '\bryzen\s*(?:5\s*)?5600\b(?!\s*(?:xt|g|x3d))']
+    ebay: { query: "Ryzen 5 5600X", must: ["5600"], must_not_extra: ["xt", "x3d", "5600g"], price_range: [40, 300] }
+    seed: { est_sold: 95, confidence: low }
+
+  - key: i9-14900k
+    name: Intel Core i9-14900K/KF
+    category: cpu
+    platform: lga1700
+    patterns: ['(?<!\d)14900\s*k?f?s?\b']
+    ebay: { query: "i9-14900K", must: ["14900"], price_range: [200, 1000] }
+    seed: { est_sold: 400, confidence: low }
+
+  - key: i7-14700k
+    name: Intel Core i7-14700K/KF
+    category: cpu
+    platform: lga1700
+    patterns: ['(?<!\d)14700\s*k?f?\b']
+    ebay: { query: "i7-14700K", must: ["14700"], price_range: [150, 800] }
+    seed: { est_sold: 300, confidence: low }
+
+  - key: i9-13900k
+    name: Intel Core i9-13900K/KF
+    category: cpu
+    platform: lga1700
+    patterns: ['(?<!\d)13900\s*k?f?s?\b']
+    ebay: { query: "i9-13900K", must: ["13900"], price_range: [150, 900] }
+    seed: { est_sold: 330, confidence: low }
+
+  - key: i7-13700k
+    name: Intel Core i7-13700K/KF
+    category: cpu
+    platform: lga1700
+    patterns: ['(?<!\d)13700\s*k?f?\b']
+    ebay: { query: "i7-13700K", must: ["13700"], price_range: [120, 700] }
+    seed: { est_sold: 260, confidence: low }
+
+  - key: i5-13600k
+    name: Intel Core i5-13600K/KF
+    category: cpu
+    platform: lga1700
+    patterns: ['(?<!\d)13600\s*k?f?\b']
+    ebay: { query: "i5-13600K", must: ["13600"], price_range: [80, 500] }
+    seed: { est_sold: 200, confidence: low }
+
+  - key: i7-12700k
+    name: Intel Core i7-12700K/KF
+    category: cpu
+    platform: lga1700
+    patterns: ['(?<!\d)12700\s*k?f?\b']
+    ebay: { query: "i7-12700K", must: ["12700"], price_range: [80, 500] }
+    seed: { est_sold: 180, confidence: low }
+
+  - key: core-ultra-9-285k
+    name: Intel Core Ultra 9 285K
+    category: cpu
+    platform: lga1851
+    patterns: ['\bultra\s*9\s*285k?\b', '(?<!\d)285k\b']
+    ebay: { query: "Core Ultra 9 285K", must: ["285k"], price_range: [250, 1000] }
+    seed: { est_sold: 480, confidence: low }
+
+  - key: core-ultra-7-265k
+    name: Intel Core Ultra 7 265K
+    category: cpu
+    platform: lga1851
+    patterns: ['\bultra\s*7\s*265k?f?\b', '(?<!\d)265k\b']
+    ebay: { query: "Core Ultra 7 265K", must: ["265k"], price_range: [150, 700] }
+    seed: { est_sold: 280, confidence: low }
+
+  # ------------------------------------------------------------------ RAM (derived keys, no patterns)
+  - key: ddr5-16gb
+    name: DDR5 16GB kit (desktop)
+    category: ram
+    ebay: { query: "DDR5 16GB (2x8GB) desktop", must: ["ddr5", "16gb"], price_range: [40, 400] }
+    seed: { est_sold: 170, confidence: low }
+  - key: ddr5-32gb
+    name: DDR5 32GB kit (desktop)
+    category: ram
+    ebay: { query: "DDR5 32GB (2x16GB) 6000", must: ["ddr5", "32gb"], price_range: [120, 900] }
+    seed: { est_sold: 380, confidence: low, note: "new kits $430-600 in Nov 2026; used trades ~75-85% of new" }
+  - key: ddr5-48gb
+    name: DDR5 48GB kit (desktop)
+    category: ram
+    ebay: { query: "DDR5 48GB (2x24GB)", must: ["ddr5", "48gb"], price_range: [200, 1200] }
+    seed: { est_sold: 560, confidence: low }
+  - key: ddr5-64gb
+    name: DDR5 64GB kit (desktop)
+    category: ram
+    ebay: { query: "DDR5 64GB (2x32GB)", must: ["ddr5", "64gb"], price_range: [250, 1800] }
+    seed: { est_sold: 850, confidence: low, note: "new 64GB kits ~$1,060 in Nov 2026" }
+  - key: ddr5-96gb
+    name: DDR5 96GB kit (desktop)
+    category: ram
+    ebay: { query: "DDR5 96GB (2x48GB)", must: ["ddr5", "96gb"], price_range: [400, 2500] }
+    seed: { est_sold: 1250, confidence: low }
+  - key: ddr5-128gb
+    name: DDR5 128GB kit (desktop)
+    category: ram
+    ebay: { query: "DDR5 128GB (4x32GB)", must: ["ddr5", "128gb"], price_range: [500, 3500] }
+    seed: { est_sold: 1650, confidence: low }
+  - key: ddr4-8gb
+    name: DDR4 8GB (desktop)
+    category: ram
+    ebay: { query: "DDR4 8GB 3200 desktop", must: ["ddr4", "8gb"], price_range: [10, 120] }
+    seed: { est_sold: 35, confidence: low }
+  - key: ddr4-16gb
+    name: DDR4 16GB kit (desktop)
+    category: ram
+    ebay: { query: "DDR4 16GB (2x8GB) 3200", must: ["ddr4", "16gb"], price_range: [20, 250] }
+    seed: { est_sold: 70, confidence: low }
+  - key: ddr4-32gb
+    name: DDR4 32GB kit (desktop)
+    category: ram
+    ebay: { query: "DDR4 32GB (2x16GB) 3200", must: ["ddr4", "32gb"], price_range: [40, 450] }
+    seed: { est_sold: 150, confidence: low, note: "DDR4 rose too as fabs wound down production" }
+  - key: ddr4-64gb
+    name: DDR4 64GB kit (desktop)
+    category: ram
+    ebay: { query: "DDR4 64GB (2x32GB) 3200", must: ["ddr4", "64gb"], price_range: [80, 800] }
+    seed: { est_sold: 320, confidence: low }
+  - key: ddr5-sodimm-16gb
+    name: DDR5 SODIMM 16GB (laptop)
+    category: ram
+    ebay: { query: "DDR5 SODIMM 16GB", must: ["ddr5", "16gb"], must_not: ["for parts", "lot of"], price_range: [30, 400] }
+    seed: { est_sold: 160, confidence: low }
+  - key: ddr5-sodimm-32gb
+    name: DDR5 SODIMM 32GB (laptop)
+    category: ram
+    ebay: { query: "DDR5 SODIMM 32GB", must: ["ddr5", "32gb"], must_not: ["for parts", "lot of"], price_range: [60, 800] }
+    seed: { est_sold: 340, confidence: low }
+  - key: ddr5-sodimm-64gb
+    name: DDR5 SODIMM 64GB (laptop)
+    category: ram
+    ebay: { query: "DDR5 SODIMM 64GB", must: ["ddr5", "64gb"], must_not: ["for parts", "lot of"], price_range: [120, 1500] }
+    seed: { est_sold: 700, confidence: low }
+  - key: ddr4-sodimm-16gb
+    name: DDR4 SODIMM 16GB (laptop)
+    category: ram
+    ebay: { query: "DDR4 SODIMM 16GB", must: ["ddr4", "16gb"], must_not: ["for parts", "lot of"], price_range: [15, 200] }
+    seed: { est_sold: 55, confidence: low }
+  - key: ddr4-sodimm-32gb
+    name: DDR4 SODIMM 32GB (laptop)
+    category: ram
+    ebay: { query: "DDR4 SODIMM 32GB", must: ["ddr4", "32gb"], must_not: ["for parts", "lot of"], price_range: [30, 400] }
+    seed: { est_sold: 120, confidence: low }
+  - key: ddr4-ecc-rdimm-32gb
+    name: DDR4 ECC RDIMM 32GB (server)
+    category: ram
+    ebay: { query: "32GB DDR4 ECC RDIMM 2666", must: ["32gb", "ddr4"], must_not: ["for parts", "lot of"], price_range: [20, 300] }
+    seed: { est_sold: 90, confidence: low }
+  - key: ddr4-ecc-rdimm-64gb
+    name: DDR4 ECC RDIMM 64GB (server)
+    category: ram
+    ebay: { query: "64GB DDR4 ECC RDIMM", must: ["64gb", "ddr4"], must_not: ["for parts", "lot of"], price_range: [40, 600] }
+    seed: { est_sold: 190, confidence: low }
+
+  # ------------------------------------------------------------------ SSDs (derived keys)
+  - key: nvme-512gb
+    name: NVMe SSD 500GB/512GB
+    category: ssd
+    ebay: { query: "500GB NVMe SSD M.2", must: ["nvme"], price_range: [15, 150] }
+    seed: { est_sold: 55, confidence: low }
+  - key: nvme-1tb
+    name: NVMe SSD 1TB
+    category: ssd
+    ebay: { query: "1TB NVMe SSD M.2 Gen4", must: ["1tb", "nvme"], price_range: [30, 300] }
+    seed: { est_sold: 110, confidence: low }
+  - key: nvme-2tb
+    name: NVMe SSD 2TB
+    category: ssd
+    ebay: { query: "2TB NVMe SSD M.2 Gen4", must: ["2tb", "nvme"], price_range: [60, 600] }
+    seed: { est_sold: 220, confidence: low, note: "cheapest new 2TB NVMe was ~$210 in Aug 2026 and rising" }
+  - key: nvme-4tb
+    name: NVMe SSD 4TB
+    category: ssd
+    ebay: { query: "4TB NVMe SSD M.2", must: ["4tb", "nvme"], price_range: [120, 1200] }
+    seed: { est_sold: 450, confidence: low }
+  - key: nvme-8tb
+    name: NVMe SSD 8TB
+    category: ssd
+    ebay: { query: "8TB NVMe SSD M.2", must: ["8tb", "nvme"], price_range: [300, 2500] }
+    seed: { est_sold: 900, confidence: low }
+  - key: sata-ssd-512gb
+    name: SATA SSD 500GB/512GB
+    category: ssd
+    ebay: { query: "500GB SATA SSD 2.5", must: ["sata"], must_not: ["nvme", "m.2", "for parts", "lot of"], price_range: [10, 100] }
+    seed: { est_sold: 35, confidence: low }
+  - key: sata-ssd-1tb
+    name: SATA SSD 1TB
+    category: ssd
+    ebay: { query: "1TB SATA SSD 2.5", must: ["1tb", "sata"], must_not: ["nvme", "m.2", "for parts", "lot of"], price_range: [20, 200] }
+    seed: { est_sold: 75, confidence: low }
+  - key: sata-ssd-2tb
+    name: SATA SSD 2TB
+    category: ssd
+    ebay: { query: "2TB SATA SSD 2.5", must: ["2tb", "sata"], must_not: ["nvme", "m.2", "for parts", "lot of"], price_range: [40, 400] }
+    seed: { est_sold: 150, confidence: low }
+  - key: sata-ssd-4tb
+    name: SATA SSD 4TB
+    category: ssd
+    ebay: { query: "4TB SATA SSD 2.5", must: ["4tb", "sata"], must_not: ["nvme", "m.2", "for parts", "lot of"], price_range: [80, 800] }
+    seed: { est_sold: 300, confidence: low }
