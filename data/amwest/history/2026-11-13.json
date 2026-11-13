@@ -1,0 +1,251 @@
+{
+  "company_id": "amwest",
+  "display_name": "AmWest Funding Corporation",
+  "refreshed_at": "2026-11-13T18:36:03Z",
+  "observation_count": 27,
+  "observations": [
+    {
+      "name": "Rate_10Y_UST",
+      "value": 4.98,
+      "unit": "%",
+      "as_of": "2026-11-10",
+      "source": "FRED",
+      "series_id": "DGS10",
+      "url": "https://fred.stlouisfed.org/series/DGS10"
+    },
+    {
+      "name": "Rate_2Y_UST",
+      "value": 4.73,
+      "unit": "%",
+      "as_of": "2026-11-10",
+      "source": "FRED",
+      "series_id": "DGS2",
+      "url": "https://fred.stlouisfed.org/series/DGS2"
+    },
+    {
+      "name": "Rate_SOFR_ON",
+      "value": 3.9,
+      "unit": "%",
+      "as_of": "2026-11-12",
+      "source": "FRED",
+      "series_id": "SOFR",
+      "url": "https://fred.stlouisfed.org/series/SOFR"
+    },
+    {
+      "name": "Rate_SOFR_30D",
+      "value": 3.91665,
+      "unit": "%",
+      "as_of": "2026-11-13",
+      "source": "FRED",
+      "series_id": "SOFR30DAYAVG",
+      "url": "https://fred.stlouisfed.org/series/SOFR30DAYAVG"
+    },
+    {
+      "name": "Rate_FedFunds",
+      "value": 3.88,
+      "unit": "%",
+      "as_of": "2026-11-11",
+      "source": "FRED",
+      "series_id": "DFF",
+      "url": "https://fred.stlouisfed.org/series/DFF"
+    },
+    {
+      "name": "Mort_30Y",
+      "value": 7.11,
+      "unit": "%",
+      "as_of": "2026-11-12",
+      "source": "FRED",
+      "series_id": "MORTGAGE30US",
+      "url": "https://fred.stlouisfed.org/series/MORTGAGE30US"
+    },
+    {
+      "name": "Mort_15Y",
+      "value": 6.45,
+      "unit": "%",
+      "as_of": "2026-11-12",
+      "source": "FRED",
+      "series_id": "MORTGAGE15US",
+      "url": "https://fred.stlouisfed.org/series/MORTGAGE15US"
+    },
+    {
+      "name": "HouseStarts",
+      "value": 1221.0,
+      "unit": "thsds",
+      "as_of": "2026-09-01",
+      "source": "FRED",
+      "series_id": "HOUST",
+      "url": "https://fred.stlouisfed.org/series/HOUST"
+    },
+    {
+      "name": "ExHomeSales",
+      "value": 3750000.0,
+      "unit": "mil",
+      "as_of": "2026-10-01",
+      "source": "FRED",
+      "series_id": "EXHOSLUSM495S",
+      "url": "https://fred.stlouisfed.org/series/EXHOSLUSM495S"
+    },
+    {
+      "name": "NewHomeSales",
+      "value": 676.0,
+      "unit": "thsds",
+      "as_of": "2026-09-01",
+      "source": "FRED",
+      "series_id": "HSN1F",
+      "url": "https://fred.stlouisfed.org/series/HSN1F"
+    },
+    {
+      "name": "CaseShiller",
+      "value": 346.5927056292,
+      "unit": "index",
+      "as_of": "2026-08-01",
+      "source": "FRED",
+      "series_id": "SPCS20RSA",
+      "url": "https://fred.stlouisfed.org/series/SPCS20RSA"
+    },
+    {
+      "name": "CPI_Headline",
+      "value": 337.476,
+      "unit": "index",
+      "as_of": "2026-10-01",
+      "source": "FRED",
+      "series_id": "CPIAUCSL",
+      "url": "https://fred.stlouisfed.org/series/CPIAUCSL"
+    },
+    {
+      "name": "Unemp_Rate",
+      "value": 4.1,
+      "unit": "%",
+      "as_of": "2026-10-01",
+      "source": "FRED",
+      "series_id": "UNRATE",
+      "url": "https://fred.stlouisfed.org/series/UNRATE"
+    },
+    {
+      "name": "RKT_Price",
+      "value": 13.8149995803833,
+      "unit": "USD",
+      "as_of": "2026-11-13",
+      "source": "Yahoo Finance",
+      "series_id": "RKT",
+      "url": "https://finance.yahoo.com/quote/RKT"
+    },
+    {
+      "name": "UWMC_Price",
+      "value": 1.2549999952316284,
+      "unit": "USD",
+      "as_of": "2026-11-13",
+      "source": "Yahoo Finance",
+      "series_id": "UWMC",
+      "url": "https://finance.yahoo.com/quote/UWMC"
+    },
+    {
+      "name": "PFSI_Price",
+      "value": 60.78499984741211,
+      "unit": "USD",
+      "as_of": "2026-11-13",
+      "source": "Yahoo Finance",
+      "series_id": "PFSI",
+      "url": "https://finance.yahoo.com/quote/PFSI"
+    },
+    {
+      "name": "LDI_Price",
+      "value": 0.44749999046325684,
+      "unit": "USD",
+      "as_of": "2026-11-13",
+      "source": "Yahoo Finance",
+      "series_id": "LDI",
+      "url": "https://finance.yahoo.com/quote/LDI"
+    },
+    {
+      "name": "VEL_Price",
+      "value": 15.789999961853027,
+      "unit": "USD",
+      "as_of": "2026-11-13",
+      "source": "Yahoo Finance",
+      "series_id": "VEL",
+      "url": "https://finance.yahoo.com/quote/VEL"
+    },
+    {
+      "name": "MBB_Price",
+      "value": 90.5,
+      "unit": "USD",
+      "as_of": "2026-11-13",
+      "source": "Yahoo Finance",
+      "series_id": "MBB",
+      "url": "https://finance.yahoo.com/quote/MBB"
+    },
+    {
+      "name": "VMBS_Price",
+      "value": 44.8843994140625,
+      "unit": "USD",
+      "as_of": "2026-11-13",
+      "source": "Yahoo Finance",
+      "series_id": "VMBS",
+      "url": "https://finance.yahoo.com/quote/VMBS"
+    },
+    {
+      "name": "RKT_StkEq",
+      "value": 95.889,
+      "unit": "USDm",
+      "as_of": "2026-09-30",
+      "source": "SEC EDGAR",
+      "series_id": "RKT_SE",
+      "url": "https://data.sec.gov/submissions/CIK0001805526.json"
+    },
+    {
+      "name": "RKT_Shares",
+      "value": 40.053477,
+      "unit": "m",
+      "as_of": "2026-11-12",
+      "source": "SEC EDGAR",
+      "series_id": "RKT_SHRS",
+      "url": "https://data.sec.gov/submissions/CIK0001805526.json"
+    },
+    {
+      "name": "UWMC_StkEq",
+      "value": 1318.911,
+      "unit": "USDm",
+      "as_of": "2026-09-30",
+      "source": "SEC EDGAR",
+      "series_id": "UWMC_SE",
+      "url": "https://data.sec.gov/submissions/CIK0001783398.json"
+    },
+    {
+      "name": "UWMC_Shares",
+      "value": 103.104205,
+      "unit": "m",
+      "as_of": "2021-03-18",
+      "source": "SEC EDGAR",
+      "series_id": "UWMC_SHRS",
+      "url": "https://data.sec.gov/submissions/CIK0001783398.json"
+    },
+    {
+      "name": "PFSI_StkEq",
+      "value": 4356.583,
+      "unit": "USDm",
+      "as_of": "2026-09-30",
+      "source": "SEC EDGAR",
+      "series_id": "PFSI_SE",
+      "url": "https://data.sec.gov/submissions/CIK0001745916.json"
+    },
+    {
+      "name": "PFSI_Shares",
+      "value": 51.958163,
+      "unit": "m",
+      "as_of": "2026-10-30",
+      "source": "SEC EDGAR",
+      "series_id": "PFSI_SHRS",
+      "url": "https://data.sec.gov/submissions/CIK0001745916.json"
+    },
+    {
+      "name": "LDI_StkEq",
+      "value": 310.914,
+      "unit": "USDm",
+      "as_of": "2026-09-30",
+      "source": "SEC EDGAR",
+      "series_id": "LDI_SE",
+      "url": "https://data.sec.gov/submissions/CIK0001831631.json"
+    }
+  ]
+}
