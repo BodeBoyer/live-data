@@ -1,41 +1,41 @@
 {
   "company_id": "amwest",
   "display_name": "AmWest Funding Corporation",
-  "refreshed_at": "2026-11-17T19:55:58Z",
+  "refreshed_at": "2026-11-18T19:26:46Z",
   "observation_count": 27,
   "observations": [
     {
       "name": "Rate_10Y_UST",
-      "value": 5.15,
+      "value": 5.12,
       "unit": "%",
-      "as_of": "2026-11-13",
+      "as_of": "2026-11-16",
       "source": "FRED",
       "series_id": "DGS10",
       "url": "https://fred.stlouisfed.org/series/DGS10"
     },
     {
       "name": "Rate_2Y_UST",
-      "value": 4.88,
+      "value": 4.83,
       "unit": "%",
-      "as_of": "2026-11-13",
+      "as_of": "2026-11-16",
       "source": "FRED",
       "series_id": "DGS2",
       "url": "https://fred.stlouisfed.org/series/DGS2"
     },
     {
       "name": "Rate_SOFR_ON",
-      "value": 3.93,
+      "value": 3.92,
       "unit": "%",
-      "as_of": "2026-11-16",
+      "as_of": "2026-11-17",
       "source": "FRED",
       "series_id": "SOFR",
       "url": "https://fred.stlouisfed.org/series/SOFR"
     },
     {
       "name": "Rate_SOFR_30D",
-      "value": 3.91999,
+      "value": 3.92133,
       "unit": "%",
-      "as_of": "2026-11-17",
+      "as_of": "2026-11-18",
       "source": "FRED",
       "series_id": "SOFR30DAYAVG",
       "url": "https://fred.stlouisfed.org/series/SOFR30DAYAVG"
@@ -44,7 +44,7 @@
       "name": "Rate_FedFunds",
       "value": 3.88,
       "unit": "%",
-      "as_of": "2026-11-13",
+      "as_of": "2026-11-16",
       "source": "FRED",
       "series_id": "DFF",
       "url": "https://fred.stlouisfed.org/series/DFF"
@@ -69,9 +69,9 @@
     },
     {
       "name": "HouseStarts",
-      "value": 1221.0,
+      "value": 1309.0,
       "unit": "thsds",
-      "as_of": "2026-09-01",
+      "as_of": "2026-10-01",
       "source": "FRED",
       "series_id": "HOUST",
       "url": "https://fred.stlouisfed.org/series/HOUST"
@@ -123,63 +123,63 @@
     },
     {
       "name": "RKT_Price",
-      "value": 13.430000305175781,
+      "value": 13.5600004196167,
       "unit": "USD",
-      "as_of": "2026-11-17",
+      "as_of": "2026-11-18",
       "source": "Yahoo Finance",
       "series_id": "RKT",
       "url": "https://finance.yahoo.com/quote/RKT"
     },
     {
       "name": "UWMC_Price",
-      "value": 1.159999966621399,
+      "value": 1.184999942779541,
       "unit": "USD",
-      "as_of": "2026-11-17",
+      "as_of": "2026-11-18",
       "source": "Yahoo Finance",
       "series_id": "UWMC",
       "url": "https://finance.yahoo.com/quote/UWMC"
     },
     {
       "name": "PFSI_Price",
-      "value": 61.189998626708984,
+      "value": 60.439998626708984,
       "unit": "USD",
-      "as_of": "2026-11-17",
+      "as_of": "2026-11-18",
       "source": "Yahoo Finance",
       "series_id": "PFSI",
       "url": "https://finance.yahoo.com/quote/PFSI"
     },
     {
       "name": "LDI_Price",
-      "value": 0.41510000824928284,
+      "value": 0.4641999900341034,
       "unit": "USD",
-      "as_of": "2026-11-17",
+      "as_of": "2026-11-18",
       "source": "Yahoo Finance",
       "series_id": "LDI",
       "url": "https://finance.yahoo.com/quote/LDI"
     },
     {
       "name": "VEL_Price",
-      "value": 15.579999923706055,
+      "value": 15.75,
       "unit": "USD",
-      "as_of": "2026-11-17",
+      "as_of": "2026-11-18",
       "source": "Yahoo Finance",
       "series_id": "VEL",
       "url": "https://finance.yahoo.com/quote/VEL"
     },
     {
       "name": "MBB_Price",
-      "value": 90.65869903564453,
+      "value": 90.91500091552734,
       "unit": "USD",
-      "as_of": "2026-11-17",
+      "as_of": "2026-11-18",
       "source": "Yahoo Finance",
       "series_id": "MBB",
       "url": "https://finance.yahoo.com/quote/MBB"
     },
     {
       "name": "VMBS_Price",
-      "value": 44.96989822387695,
+      "value": 45.08000183105469,
       "unit": "USD",
-      "as_of": "2026-11-17",
+      "as_of": "2026-11-18",
       "source": "Yahoo Finance",
       "series_id": "VMBS",
       "url": "https://finance.yahoo.com/quote/VMBS"
