@@ -1,14 +1,14 @@
 {
   "company_id": "coveragex",
   "display_name": "Coverage X",
-  "refreshed_at": "2026-11-19T19:31:43Z",
+  "refreshed_at": "2026-11-20T19:09:39Z",
   "observation_count": 16,
   "observations": [
     {
       "name": "Rate_10Y_UST",
-      "value": 5.1,
+      "value": 5.07,
       "unit": "%",
-      "as_of": "2026-11-17",
+      "as_of": "2026-11-18",
       "source": "FRED",
       "series_id": "DGS10",
       "url": "https://fred.stlouisfed.org/series/DGS10"
@@ -17,16 +17,16 @@
       "name": "FedFunds_Upper",
       "value": 4.0,
       "unit": "%",
-      "as_of": "2026-11-19",
+      "as_of": "2026-11-20",
       "source": "FRED",
       "series_id": "DFEDTARU",
       "url": "https://fred.stlouisfed.org/series/DFEDTARU"
     },
     {
       "name": "Spread_10Y2Y",
-      "value": 0.27,
+      "value": 0.28,
       "unit": "%",
-      "as_of": "2026-11-18",
+      "as_of": "2026-11-19",
       "source": "FRED",
       "series_id": "T10Y2Y",
       "url": "https://fred.stlouisfed.org/series/T10Y2Y"
@@ -51,9 +51,9 @@
     },
     {
       "name": "UMich_Sentiment",
-      "value": 48.1,
+      "value": 48.0,
       "unit": "index",
-      "as_of": "2026-09-01",
+      "as_of": "2026-10-01",
       "source": "FRED",
       "series_id": "UMCSENT",
       "url": "https://fred.stlouisfed.org/series/UMCSENT"
@@ -105,45 +105,45 @@
     },
     {
       "name": "AIZ_Price",
-      "value": 316.5400085449219,
+      "value": 320.0050048828125,
       "unit": "USD",
-      "as_of": "2026-11-19",
+      "as_of": "2026-11-20",
       "source": "Yahoo Finance",
       "series_id": "AIZ",
       "url": "https://finance.yahoo.com/quote/AIZ"
     },
     {
       "name": "ALLY_Price",
-      "value": 37.29999923706055,
+      "value": 36.790000915527344,
       "unit": "USD",
-      "as_of": "2026-11-19",
+      "as_of": "2026-11-20",
       "source": "Yahoo Finance",
       "series_id": "ALLY",
       "url": "https://finance.yahoo.com/quote/ALLY"
     },
     {
       "name": "KMX_Price",
-      "value": 50.345001220703125,
+      "value": 48.70500183105469,
       "unit": "USD",
-      "as_of": "2026-11-19",
+      "as_of": "2026-11-20",
       "source": "Yahoo Finance",
       "series_id": "KMX",
       "url": "https://finance.yahoo.com/quote/KMX"
     },
     {
       "name": "CACC_Price",
-      "value": 472.43499755859375,
+      "value": 472.67999267578125,
       "unit": "USD",
-      "as_of": "2026-11-19",
+      "as_of": "2026-11-20",
       "source": "Yahoo Finance",
       "series_id": "CACC",
       "url": "https://finance.yahoo.com/quote/CACC"
     },
     {
       "name": "COF_Price",
-      "value": 183.72999572753906,
+      "value": 181.47999572753906,
       "unit": "USD",
-      "as_of": "2026-11-19",
+      "as_of": "2026-11-20",
       "source": "Yahoo Finance",
       "series_id": "COF",
       "url": "https://finance.yahoo.com/quote/COF"
