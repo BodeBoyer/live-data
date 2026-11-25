@@ -1,27 +1,27 @@
 # AmWest Funding Corporation live data
-# Refreshed: 2026-11-24T21:23:15Z
+# Refreshed: 2026-11-25T20:31:10Z
 # Observations: 27
 name,value,unit,source,series_id,as_of,url
 Rate_10Y_UST,4.92,%,FRED,DGS10,2026-11-23,https://fred.stlouisfed.org/series/DGS10
 Rate_2Y_UST,4.63,%,FRED,DGS2,2026-11-23,https://fred.stlouisfed.org/series/DGS2
-Rate_SOFR_ON,3.92,%,FRED,SOFR,2026-11-23,https://fred.stlouisfed.org/series/SOFR
-Rate_SOFR_30D,3.92534,%,FRED,SOFR30DAYAVG,2026-11-24,https://fred.stlouisfed.org/series/SOFR30DAYAVG
-Rate_FedFunds,3.88,%,FRED,DFF,2026-11-20,https://fred.stlouisfed.org/series/DFF
-Mort_30Y,7.28,%,FRED,MORTGAGE30US,2026-11-19,https://fred.stlouisfed.org/series/MORTGAGE30US
-Mort_15Y,6.66,%,FRED,MORTGAGE15US,2026-11-19,https://fred.stlouisfed.org/series/MORTGAGE15US
+Rate_SOFR_ON,3.94,%,FRED,SOFR,2026-11-24,https://fred.stlouisfed.org/series/SOFR
+Rate_SOFR_30D,3.92601,%,FRED,SOFR30DAYAVG,2026-11-25,https://fred.stlouisfed.org/series/SOFR30DAYAVG
+Rate_FedFunds,3.88,%,FRED,DFF,2026-11-23,https://fred.stlouisfed.org/series/DFF
+Mort_30Y,7.21,%,FRED,MORTGAGE30US,2026-11-25,https://fred.stlouisfed.org/series/MORTGAGE30US
+Mort_15Y,6.54,%,FRED,MORTGAGE15US,2026-11-25,https://fred.stlouisfed.org/series/MORTGAGE15US
 HouseStarts,1309.0,thsds,FRED,HOUST,2026-10-01,https://fred.stlouisfed.org/series/HOUST
 ExHomeSales,3750000.0,mil,FRED,EXHOSLUSM495S,2026-10-01,https://fred.stlouisfed.org/series/EXHOSLUSM495S
-NewHomeSales,676.0,thsds,FRED,HSN1F,2026-09-01,https://fred.stlouisfed.org/series/HSN1F
+NewHomeSales,701.0,thsds,FRED,HSN1F,2026-10-01,https://fred.stlouisfed.org/series/HSN1F
 CaseShiller,346.8760409878,index,FRED,SPCS20RSA,2026-09-01,https://fred.stlouisfed.org/series/SPCS20RSA
 CPI_Headline,337.476,index,FRED,CPIAUCSL,2026-10-01,https://fred.stlouisfed.org/series/CPIAUCSL
 Unemp_Rate,4.1,%,FRED,UNRATE,2026-10-01,https://fred.stlouisfed.org/series/UNRATE
-RKT_Price,14.25,USD,Yahoo Finance,RKT,2026-11-24,https://finance.yahoo.com/quote/RKT
-UWMC_Price,1.149999976158142,USD,Yahoo Finance,UWMC,2026-11-24,https://finance.yahoo.com/quote/UWMC
-PFSI_Price,59.349998474121094,USD,Yahoo Finance,PFSI,2026-11-24,https://finance.yahoo.com/quote/PFSI
-LDI_Price,0.399399995803833,USD,Yahoo Finance,LDI,2026-11-24,https://finance.yahoo.com/quote/LDI
-VEL_Price,15.5,USD,Yahoo Finance,VEL,2026-11-24,https://finance.yahoo.com/quote/VEL
-MBB_Price,91.66999816894531,USD,Yahoo Finance,MBB,2026-11-24,https://finance.yahoo.com/quote/MBB
-VMBS_Price,45.43000030517578,USD,Yahoo Finance,VMBS,2026-11-24,https://finance.yahoo.com/quote/VMBS
+RKT_Price,15.25,USD,Yahoo Finance,RKT,2026-11-25,https://finance.yahoo.com/quote/RKT
+UWMC_Price,1.2200000286102295,USD,Yahoo Finance,UWMC,2026-11-25,https://finance.yahoo.com/quote/UWMC
+PFSI_Price,61.3849983215332,USD,Yahoo Finance,PFSI,2026-11-25,https://finance.yahoo.com/quote/PFSI
+LDI_Price,0.4729999899864197,USD,Yahoo Finance,LDI,2026-11-25,https://finance.yahoo.com/quote/LDI
+VEL_Price,15.859999656677246,USD,Yahoo Finance,VEL,2026-11-25,https://finance.yahoo.com/quote/VEL
+MBB_Price,92.09500122070312,USD,Yahoo Finance,MBB,2026-11-25,https://finance.yahoo.com/quote/MBB
+VMBS_Price,45.630001068115234,USD,Yahoo Finance,VMBS,2026-11-25,https://finance.yahoo.com/quote/VMBS
 RKT_StkEq,95.889,USDm,SEC EDGAR,RKT_SE,2026-09-30,https://data.sec.gov/submissions/CIK0001805526.json
 RKT_Shares,40.053477,m,SEC EDGAR,RKT_SHRS,2026-11-12,https://data.sec.gov/submissions/CIK0001805526.json
 UWMC_StkEq,1318.911,USDm,SEC EDGAR,UWMC_SE,2026-09-30,https://data.sec.gov/submissions/CIK0001783398.json
