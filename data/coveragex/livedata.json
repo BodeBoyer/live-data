@@ -1,14 +1,14 @@
 {
   "company_id": "coveragex",
   "display_name": "Coverage X",
-  "refreshed_at": "2026-11-25T20:31:10Z",
+  "refreshed_at": "2026-11-26T20:18:39Z",
   "observation_count": 16,
   "observations": [
     {
       "name": "Rate_10Y_UST",
-      "value": 4.92,
+      "value": 4.91,
       "unit": "%",
-      "as_of": "2026-11-23",
+      "as_of": "2026-11-24",
       "source": "FRED",
       "series_id": "DGS10",
       "url": "https://fred.stlouisfed.org/series/DGS10"
@@ -17,16 +17,16 @@
       "name": "FedFunds_Upper",
       "value": 4.0,
       "unit": "%",
-      "as_of": "2026-11-25",
+      "as_of": "2026-11-26",
       "source": "FRED",
       "series_id": "DFEDTARU",
       "url": "https://fred.stlouisfed.org/series/DFEDTARU"
     },
     {
       "name": "Spread_10Y2Y",
-      "value": 0.28,
+      "value": 0.24,
       "unit": "%",
-      "as_of": "2026-11-24",
+      "as_of": "2026-11-25",
       "source": "FRED",
       "series_id": "T10Y2Y",
       "url": "https://fred.stlouisfed.org/series/T10Y2Y"
@@ -105,7 +105,7 @@
     },
     {
       "name": "AIZ_Price",
-      "value": 325.5849914550781,
+      "value": 325.7300109863281,
       "unit": "USD",
       "as_of": "2026-11-25",
       "source": "Yahoo Finance",
@@ -114,7 +114,7 @@
     },
     {
       "name": "ALLY_Price",
-      "value": 38.19499969482422,
+      "value": 38.459999084472656,
       "unit": "USD",
       "as_of": "2026-11-25",
       "source": "Yahoo Finance",
@@ -123,7 +123,7 @@
     },
     {
       "name": "KMX_Price",
-      "value": 51.64500045776367,
+      "value": 51.689998626708984,
       "unit": "USD",
       "as_of": "2026-11-25",
       "source": "Yahoo Finance",
@@ -132,7 +132,7 @@
     },
     {
       "name": "CACC_Price",
-      "value": 488.19000244140625,
+      "value": 490.2200012207031,
       "unit": "USD",
       "as_of": "2026-11-25",
       "source": "Yahoo Finance",
@@ -141,7 +141,7 @@
     },
     {
       "name": "COF_Price",
-      "value": 182.25999450683594,
+      "value": 182.52000427246094,
       "unit": "USD",
       "as_of": "2026-11-25",
       "source": "Yahoo Finance",
