@@ -1,7 +1,7 @@
 {
   "company_id": "coveragex",
   "display_name": "Coverage X",
-  "refreshed_at": "2026-11-26T20:18:39Z",
+  "refreshed_at": "2026-11-27T20:04:22Z",
   "observation_count": 16,
   "observations": [
     {
@@ -17,7 +17,7 @@
       "name": "FedFunds_Upper",
       "value": 4.0,
       "unit": "%",
-      "as_of": "2026-11-26",
+      "as_of": "2026-11-27",
       "source": "FRED",
       "series_id": "DFEDTARU",
       "url": "https://fred.stlouisfed.org/series/DFEDTARU"
@@ -105,45 +105,45 @@
     },
     {
       "name": "AIZ_Price",
-      "value": 325.7300109863281,
+      "value": 328.17999267578125,
       "unit": "USD",
-      "as_of": "2026-11-25",
+      "as_of": "2026-11-27",
       "source": "Yahoo Finance",
       "series_id": "AIZ",
       "url": "https://finance.yahoo.com/quote/AIZ"
     },
     {
       "name": "ALLY_Price",
-      "value": 38.459999084472656,
+      "value": 38.75,
       "unit": "USD",
-      "as_of": "2026-11-25",
+      "as_of": "2026-11-27",
       "source": "Yahoo Finance",
       "series_id": "ALLY",
       "url": "https://finance.yahoo.com/quote/ALLY"
     },
     {
       "name": "KMX_Price",
-      "value": 51.689998626708984,
+      "value": 52.43000030517578,
       "unit": "USD",
-      "as_of": "2026-11-25",
+      "as_of": "2026-11-27",
       "source": "Yahoo Finance",
       "series_id": "KMX",
       "url": "https://finance.yahoo.com/quote/KMX"
     },
     {
       "name": "CACC_Price",
-      "value": 490.2200012207031,
+      "value": 499.1300048828125,
       "unit": "USD",
-      "as_of": "2026-11-25",
+      "as_of": "2026-11-27",
       "source": "Yahoo Finance",
       "series_id": "CACC",
       "url": "https://finance.yahoo.com/quote/CACC"
     },
     {
       "name": "COF_Price",
-      "value": 182.52000427246094,
+      "value": 184.92999267578125,
       "unit": "USD",
-      "as_of": "2026-11-25",
+      "as_of": "2026-11-27",
       "source": "Yahoo Finance",
       "series_id": "COF",
       "url": "https://finance.yahoo.com/quote/COF"
